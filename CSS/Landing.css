@@ -7,6 +7,10 @@
  }
  .navbar li { color: #000 } 
 
+ .navbar b{
+    font-size: 30px;
+ }
+
 /* Footer Styling */
  .footer {
     position: absolute;
