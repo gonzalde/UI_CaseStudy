@@ -16,10 +16,11 @@
     position: absolute;
     bottom: 0;
     width: 100%;
-    height: 60px;
-    line-height: 60px;
+    height: 50px;
+    line-height: 50px;
     background-color: #ffffff;
 }
+
 .footer-nav ul{
     margin-left:270px;
     text-align: center;
