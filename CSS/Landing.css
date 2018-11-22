@@ -1,3 +1,46 @@
+/* Main Content Styling */
+.main-content{
+    margin-top: 2.7%;
+}
+
+.main-content h1{
+    color: white;
+    font-size: 1.6em;
+}
+
+.main-content h2{
+    color: white;
+    font-weight: bold;
+    font-size: 0.9em;
+}
+.search-criteria{
+    padding-top: 4%;
+}
+.search-criteria h3{
+    padding-top: 2%;
+    color: white;
+    font-size: 0.6em;
+}
+.search-criteria button{
+    margin-right: 25%;
+    float: right;
+    background-color: #76B8FF;
+    border-color: #76B8FF;
+}
+
+.main-content div{
+    margin-left: 0px;
+    margin-right: 0px;
+}
+
+.date input{
+    width: 90%;
+    font-size: 0.7em;
+}
+
+.room-info{
+    padding-right: 5%;
+}
 .modal-footer button{
     background-color: #76B8FF;
     color: white;
