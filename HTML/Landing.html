@@ -30,7 +30,7 @@
                 <div class="navbar-nav">
                     <a class="nav-item nav-link" href="#">Hotels</a>
                     <a class="nav-item nav-link" href="#">Experiences</a>
-                    <a class="nav-item nav-link" href="#">Register</a>
+                    <a class="nav-item nav-link" href="#" data-toggle="modal" data-target="#registerModal">Register</a>
                     <!-- upon click Sign In will open a sign in modal -->
                     <a class="nav-item nav-link" href="#" data-toggle="modal" data-target="#signInModal">Sign in</a>
             </div>
@@ -52,13 +52,43 @@
                         </form>
                     </div>
                     <div class="modal-footer">
-                        <button onClick = "" class="btn btn-secondary" id = "submitSignIn" data-dismiss="modal">Submit</button>
-                        <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+                        <button style = "margin-right:325px" onClick = "" class="btn btn-default" id = "submitSignIn" data-dismiss="modal">Submit</button>
+                        <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
                     </div>
                 </div>
             </div>
          </div>
         <!-- end of sign in modal -->
+
+         <!-- Beginning of registration modal -->
+         <div id="registerModal" class="modal fade" role="dialog">
+                <div class="modal-dialog">
+                    <!-- Modal content-->
+                    <div class="modal-content">
+                        <div class="modal-header">
+                            <h4>Sign In</h4>
+                        </div>
+                        <div class="modal-body">
+                            <form id = "registerInForm">
+                                <h6>Name</h6>
+                                <input type="text" placeholder= "Your Name" id = "rName">
+                                <h6>Email</h6>
+                                <input type="email" placeholder="email" id = "rEmail">
+                                <h6>Phone Number</h6>
+                                <input type="text" placeholder="Phone Number" id = "rPhone">
+                                <h6 style = "padding-top: 20px">Password</h6>
+                                <input type="password" placeholder="password" id = "rPassword">
+                            </form>
+                        </div>
+                        <div class="modal-footer">
+                            <button style = "margin-right:325px" class="btn btn-default" id = "saveCookies" data-dismiss="modal">Submit</button>
+                            <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
+                        </div>
+                    </div>
+                </div>
+             </div>
+         <!-- End of registration modal -->
+
 
         <!-- Footer Section -->
         <footer class="footer">
