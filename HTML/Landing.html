@@ -43,12 +43,16 @@
                         <h4>Sign In</h4>
                     </div>
                     <div class="modal-body">
-                        <form action="">
-
+                        <form id = "signInForm">
+                            <h6>Email</h6>
+                            <input type="email" placeholder= "email">
+                            <h6 style = "padding-top: 20px">Password</h6>
+                            <input type="password" placeholder="password">
                         </form>
                     </div>
                     <div class="modal-footer">
-                        <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
+                        <button onClick = "" class="btn btn-secondary" id = "submitSignIn" data-dismiss="modal">Submit</button>
+                        <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
                     </div>
                 </div>
             </div>
@@ -59,7 +63,7 @@
         <footer class="footer">
             <div class="container">
                 <div class="row footer-nav"> <a style="color:#8E8E93">© Le Hotelier Inc. 2018</a>
-                    <ul>
+                    <ul id = "footerMid">
                         <a href="#">About</a>
                         <a href="#">Careers</a>
                         <a href="#">Help</a>
