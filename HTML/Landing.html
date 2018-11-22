@@ -5,6 +5,7 @@
         <link rel="shortcut icon" href="../Assets/favicon.ico">
         <meta name="viewport" content="width=device-width, initial-scale=1,
             shrink-to-fit=no">
+            <meta charset="utf-8"/>
             <link rel="stylesheet" href="../CSS/GlobalStyle.css">
         <link rel="stylesheet" href="../CSS/Landing.css">
         <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css">
@@ -28,11 +29,12 @@
             <div class="collapse navbar-collapse justify-content-end"
                 id="navbarNavAltMarkup">
                 <div class="navbar-nav">
-                    <a class="nav-item nav-link" href="#">Hotels</a>
-                    <a class="nav-item nav-link" href="#">Experiences</a>
-                    <a class="nav-item nav-link" href="#" data-toggle="modal" data-target="#registerModal">Register</a>
+                    <a class="nav-item nav-link" href="#" id = "hotelButton">Hotels</a>
+                    <a class="nav-item nav-link" href="#" id = "experienceButton">Experiences</a>
+                    <a id = "registerButton" class="nav-item nav-link" href="#" data-toggle="modal" data-target="#registerModal">Register</a>
                     <!-- upon click Sign In will open a sign in modal -->
-                    <a class="nav-item nav-link" href="#" data-toggle="modal" data-target="#signInModal">Sign in</a>
+                    <a id = "signInButton" class="nav-item nav-link" href="#" data-toggle="modal" data-target="#signInModal">Sign in</a>
+                    <a id = "signOutButton" style = "display: none" class="nav-item nav-link" href="#">Sign Out</a>
             </div>
         </nav>
         <!-- sign in modal that will open when Sign in is clicked -->
@@ -46,13 +48,13 @@
                     <div class="modal-body">
                         <form id = "signInForm">
                             <h6>Email</h6>
-                            <input type="email" placeholder= "email">
+                            <input id = "logEmail" type="email" placeholder= "email">
                             <h6 style = "padding-top: 20px">Password</h6>
-                            <input type="password" placeholder="password">
+                            <input id = "logPassword" type="password" placeholder="password">
                         </form>
                     </div>
                     <div class="modal-footer">
-                        <button style = "margin-right:325px" onClick = "" class="btn btn-default" id = "submitSignIn" data-dismiss="modal">Submit</button>
+                        <button style = "margin-right:325px" class="btn btn-default" id = "submitSignIn" data-dismiss="modal">Submit</button>
                         <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
                     </div>
                 </div>

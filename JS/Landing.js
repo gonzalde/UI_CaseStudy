@@ -1,6 +1,7 @@
 
 // Helper Functions
 
+var signedIn = false;
 //sets individual cookie such as the Username cookie or the Email cookie
 function setCookie(cname, cvalue, exdays) {
     var d = new Date();
@@ -47,10 +48,68 @@ function createCookies(evt) {
             'email': document.getElementById('rEmail').value
         }
         setCookie(document.getElementById('rEmail').value, JSON.stringify(user));
-        logIn(document.getElementById('rEmail').value);
+        logIn();
         signedIn();
     }
     else{
         restart();
     }
+}
+
+function logIn(){
+    document.getElementById("signInButton").style.display = "none";
+    document.getElementById("signOutButton").style.display = "block";
+    document.getElementById("registerButton").innerHTML = "Profile";
+    signedIn = true;
+}
+
+//function to limity functionality to people who are not logged in
+
+document.getElementById("hotelButton").addEventListener('click', limitUserHotels);
+document.getElementById("experienceButton").addEventListener('click', limitUserExperience);
+
+function limitUserExperience(){
+    if(!signedIn){
+        alert("Please sign in or register to access this page!");
+    }else{
+        window.location.replace("/AdvancedSearch.html");
+    }
+}
+
+function limitUserHotels(){
+    if(!signedIn){
+        alert("Please sign in or register to access this page!");
+    }else{
+        window.location.replace("/AdvancedSearch.html");
+    }
+}
+//end of limit functions
+
+//function to validate if there is an email/password pair saved to cookies
+
+document.getElementById("submitSignIn").addEventListener('click', validate);
+
+function validate(){
+    var loginText = document.getElementById('logEmail').value
+    var user = getCookie(loginText);
+    if(user!=""){
+        userInfo = JSON.parse(user);
+        if($('#logPassword').val()== userInfo["password"]){
+            logIn();
+        }else{
+            alert("incorrect password");
+        }
+    }else{
+        alert("no user associated with this email");
+    }
+}
+
+// Performs log out.
+document.getElementById("signOutButton").addEventListener('click', restart);
+
+function restart() {
+    document.getElementById("registerButton").innerHTML = "Register";
+    signedIn = false;
+    $("#signInButton").css("display:block");
+    $("#signOutButton").css("display:none");
 }
