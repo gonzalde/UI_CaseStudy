@@ -45,7 +45,8 @@ function createCookies(evt) {
             'name' : document.getElementById('rName').value,
             'password' : document.getElementById('rPassword').value,
             'phone': document.getElementById('rPhone').value,
-            'email': document.getElementById('rEmail').value
+            'email': document.getElementById('rEmail').value,
+            'signedIn': "true"
         }
         setCookie(document.getElementById('rEmail').value, JSON.stringify(user));
         logIn();
@@ -72,7 +73,7 @@ function limitUserExperience(){
     if(!signedIn){
         alert("Please sign in or register to access this page!");
     }else{
-        window.location.replace("/AdvancedSearch.html");
+        window.location.replace("../HTML/AdvancedSearch.html");
     }
 }
 
@@ -80,7 +81,7 @@ function limitUserHotels(){
     if(!signedIn){
         alert("Please sign in or register to access this page!");
     }else{
-        window.location.replace("/AdvancedSearch.html");
+        window.location.replace("../HTML/AdvancedSearch.html");
     }
 }
 //end of limit functions
@@ -110,6 +111,6 @@ document.getElementById("signOutButton").addEventListener('click', restart);
 function restart() {
     document.getElementById("registerButton").innerHTML = "Register";
     signedIn = false;
-    $("#signInButton").css("display:block");
-    $("#signOutButton").css("display:none");
+    document.getElementById("signInButton").style.display = "block"
+    document.getElementById("signOutButton").style.display = "none";
 }
