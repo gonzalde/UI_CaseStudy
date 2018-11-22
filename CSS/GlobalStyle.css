@@ -1,5 +1,3 @@
-<<<<<<< HEAD
-
 /* Top Navbar Styling */
 .navbar {
     background-color: transparent;
@@ -39,16 +37,3 @@
     font-weight: bold;
     text-decoration: none;
 }
-#submitSignIn{
-    margin-right: 325px;
-}
-.btn-default{
-    background-color: #76B8FF;
-    color: white
-}
-.btn-default:hover{
-    background-color: rgb(48, 147, 253);
-    color: white
-}
-=======
->>>>>>> 1f11692b66a1d6adbe46b8eff71e3f99e656ae80
