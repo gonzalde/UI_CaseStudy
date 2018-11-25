@@ -106,3 +106,30 @@ body{
     right:auto;
     width: 45%;
 }
+/* Spotlight Section Styling */
+.spotlight-section{
+    margin-top:4%;
+    background-image: url("../Assets/aruba.png");
+    border-radius: 12px;
+    width: 100%;
+    height: 15%;
+}
+.spotlight-section h5{
+    padding-top: 2%;
+    text-align: center;
+    font-weight: bold;
+    font-size: 2em;
+    color: white;
+}
+.spotlight-button{
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding-bottom: 2%;
+}
+.spotlight-button button{
+    background-color: #76B8FF;
+    border-color: #76B8FF;
+    width: 100px;
+}
