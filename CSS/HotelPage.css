@@ -1,0 +1,67 @@
+#picAndDescript{
+    margin-top: 50px;
+    height: 100px;
+}
+#hotelRoom{
+    width: 450px;
+    height: auto;
+    border-radius: 25px;
+}
+br {
+   display: block;
+   margin: .01px 0;
+}
+.checked{
+    color: yellow;
+}
+#bookButton{
+    padding-left: 20px;
+    padding-right: 20px;
+    padding-top: 1px;
+    padding-bottom: 1px;
+    border-radius: 25px;
+}
+#Price{
+    height: 150px;
+    text-align: center;
+}
+#description{
+    float: right;
+    width: 700px;
+    margin-left: 500px;
+}
+#QuickFacts{
+    margin-top: 40px;
+    font-weight: bold;
+}
+ul {
+    margin: 0;
+    padding-left:0px;
+    color: white; 
+  }
+ul {
+    list-style-type: none;
+  }
+ul > li {
+    text-indent: -5px;
+    font-weight: lighter;
+}
+ul > li:before {
+    content: "-";
+    text-indent: -5px;
+}
+#map{
+    margin-top: 70px;
+    border-radius: 50%;
+    width: 100px;
+    height: auto;
+    margin-left: 30px;
+}
+#share{
+    text-align: center;
+    color: white;
+    margin-top: 50px;
+}
+#reviews{
+    background-color:lightgray;
+}
