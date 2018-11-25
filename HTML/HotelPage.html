@@ -15,7 +15,6 @@
             src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
         <script
             src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/js/bootstrap.min.js"></script>
-        <script src="../JS/HotelPage.js"></script>
     </head>
     <body style="background-color:#76B8FF">
         <!-- Top Navbar -->
@@ -41,6 +40,41 @@
                 </div>
             </div>
         </nav>
+
+        <!-- content section -->
+        <div class = "container">
+            <div class = "row justify-content-between" id = "picAndDescript">
+                <div class = "col-5">
+                    <img id = "hotelRoom" src="../Assets/hotelRoom.png" alt="">
+                </div>
+                <div class = "col-5">
+                    <h3 style = "color: #646464">Bank Hotel</h3>
+                    <p style = "color: white;margin-bottom: 1px;">
+                    &Ouml;stermalm Stockholm
+                    </p>
+                    <span class="fa fa-star checked"></span>
+                    <span class="fa fa-star checked"></span>
+                    <span class="fa fa-star checked"></span>
+                    <span class="fa fa-star checked"></span>
+                    <span class="fa fa-star checked"></span>
+                </div>
+                <div class = "col-2" id = "Price">
+                    <h6 style = "color: #646464;">Per Night</h6>
+                    <p style = "color: white; margin-bottom: 4px;">253&euro;</p>
+                    <button class="btn btn-light" id = "bookButton">Book</button>
+                </div>
+            </div>
+            <div class = "row justify-content-between">
+                <div id = "description">
+                        <p style = "color:white">This elegant hotel is set in an ideal central Stockholm location, steps from Östermalm district's notable Strandvägen and Stureplan. The Bank Hotel features an on-site Mediterranean restaurant and fitness centre, along with free WiFi. Kungsträdgården Metro Station is right around the corner, 100 m away. Housed in a former bank building, all rooms are designed with stylish furnishings and feature a flat-screen TV, minibar and coffee facilities. Bathrobes, slippers and plush arm chairs provide further relaxation. Other details include luxury toiletries in the marble bathrooms.</p>
+                </div>
+            </div>
+            <div class = "row justify-content-between">
+                <div class = "col-2" id ="QuickFacts">
+                    <h6>Quick Facts</h6>
+                </div>
+            </div>
+        </div>
 
         <!-- Footer Section -->
         <footer class="footer">
@@ -69,5 +103,6 @@
 
             </div>
         </footer>
+        <script src="../JS/HotelPage.js"></script>
     </body>
 </html>
