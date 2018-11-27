@@ -44,6 +44,7 @@ function getFavorites(){
 
 function getGroupFavorites(){
     $(".favorites-group").hide();
+    $(".group-favorites-group").show();
     $("#group-favorites-title").css("color","#646464");
     $("#group-favorites-title").css("text-decoration","underline");
     $("#favorites-title").css("color","white");

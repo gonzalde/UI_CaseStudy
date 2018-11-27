@@ -81,6 +81,11 @@
     color: #646464;
     font-size: 1.2em;
 }
+.group-favorites-group h3{
+    padding-top: 2%;
+    color: #646464;
+    font-size: 1.2em;
+}
 .favorites-group a{
     font-size: 0.8em;
     font-weight: bold;
