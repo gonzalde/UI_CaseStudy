@@ -51,11 +51,16 @@ ul > li:before {
     text-indent: -5px;
 }
 #map{
-    margin-top: 70px;
+    margin-top: 10px;
     border-radius: 50%;
     width: 100px;
     height: auto;
-    margin-left: 30px;
+}
+#mapDiv{
+    margin-top: 40px; 
+    font-weight: bold; 
+    color: #646464; 
+    text-align: center
 }
 #share{
     text-align: center;
