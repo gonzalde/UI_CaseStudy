@@ -66,6 +66,13 @@
 } 
 
 /* Favorites Section Styling */
+.favorites-select h1{
+    margin-right: 2%;
+}
+.favorites-select h1:active{
+    color: #646464;
+    text-decoration: underline;
+}
 .favorites-group{
     margin-top: 4%;
 }
