@@ -1,0 +1,67 @@
+/* Main Content Styling */
+.main-content{
+    margin-top: 2.7%;
+}
+
+.main-content h1{
+    color: white;
+    font-size: 1.6em;
+}
+
+.main-content h2{
+    color: white;
+    font-weight: bold;
+    font-size: 0.9em;
+}
+.main-content div{
+    margin-left: 0px;
+    margin-right: 0px;
+}
+/* Quick Search styling */
+.search-criteria{
+    padding-top: 4%;
+}
+.search-criteria h3{
+    padding-top: 2%;
+    color: white;
+    font-size: 0.6em;
+}
+.search-criteria button{
+    margin-right: 25%;
+    float: right;
+    background-color: white;
+    border-color: white;
+    color: #76B8FF;
+}
+.date input{
+    width: 90%;
+    font-size: 0.7em;
+}
+.room-info{
+    padding-right: 5%;
+}
+.form-control-range{
+    min:10;
+    max:20;
+}
+.stars option{
+    color: #FEDF00;
+}
+
+.keyword-option {
+    padding-left: 1%;
+    padding-right: 1%;
+    margin-left: 1% !important;
+    margin-right: 1% !important;
+    background-color: white;
+    color: #646464;
+    display: inline-block;
+    border-radius: 4px;
+    font-weight: normal;
+    font-size: 0.9em;
+    max-width: 100%;
+} 
+.keyword-option p{
+    margin: 0;
+    display: inline-block;
+} 

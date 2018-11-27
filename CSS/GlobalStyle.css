@@ -1,3 +1,7 @@
+body{
+    height: 100%;
+}
+
 /* Top Navbar Styling */
 .navbar {
     background-color: transparent;

@@ -73,7 +73,7 @@ function limitUserExperience(){
     if(!signedIn){
         alert("Please sign in or register to access this page!");
     }else{
-        window.location.replace("../HTML/AdvancedSearch.html");
+        window.location.replace("../HTML/AdvancedSearchExperience.html");
     }
 }
 
@@ -81,7 +81,7 @@ function limitUserHotels(){
     if(!signedIn){
         alert("Please sign in or register to access this page!");
     }else{
-        window.location.replace("../HTML/AdvancedSearch.html");
+        window.location.replace("../HTML/AdvancedSearchHotel.html");
     }
 }
 //end of limit functions
