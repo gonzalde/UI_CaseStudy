@@ -2,16 +2,20 @@
 .main-content{
     margin-top: 2.7%;
 }
-
 .main-content h1{
     color: white;
     font-size: 1.6em;
 }
-
 .main-content h2{
     color: white;
     font-weight: bold;
     font-size: 0.9em;
+}
+.main-content h6{
+    color: white;
+    font-size: 2em;
+    font-weight: bold;
+    padding-left: 15px;
 }
 .main-content div{
     margin-left: 0px;
@@ -40,14 +44,9 @@
 .room-info{
     padding-right: 5%;
 }
-.form-control-range{
-    min:10;
-    max:20;
-}
 .stars option{
     color: #FEDF00;
 }
-
 .keyword-option {
     padding-left: 1%;
     padding-right: 1%;
@@ -65,3 +64,8 @@
     margin: 0;
     display: inline-block;
 } 
+
+/* Favorites Section Styling */
+.favorites-group{
+    margin-top: 4%;
+}

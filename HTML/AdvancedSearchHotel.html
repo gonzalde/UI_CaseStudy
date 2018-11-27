@@ -19,157 +19,165 @@
         <script src="../JS/AdvancedSearchHotel.js"></script>
     </head>
     <body style="background-color:#76B8FF">
-        <!-- Top Navbar -->
-        <nav class="navbar navbar-expand-lg navbar-dark">
-            <a class="navbar-brand" style="font-size: 30px" href="#">
-                <img src="../Assets/hotel.svg" width="40"
-                    height="40" class="d-inline-block align-bottom" alt="Logo">
-                Le<b>Hotelier</b>
-            </a> <button class="navbar-toggler" type="button"
-                data-toggle="collapse" data-target="#navbarNavAltMarkup"
-                aria-controls="navbarNavAltMarkup" aria-expanded="false"
-                aria-label="Toggle navigation">
-                <span class="navbar-toggler-icon"></span>
-            </button>
-            <div class="collapse navbar-collapse justify-content-end"
-                id="navbarNavAltMarkup">
-                <div class="navbar-nav">
-                    <a class="nav-item nav-link active" href="#">Hotels</a>
-                    <a class="nav-item nav-link" href="#">Experiences</a>
-                    <a class="nav-item nav-link" href="#">Profile</a>
-                    <!-- upon click Sign In will open a sign in modal -->
-                    <a class="nav-item nav-link" id="signOut" href="#"
-                        onclick="restart()">Sign Out</a>
+        <div id="body-container">
+            <!-- Top Navbar -->
+            <nav class="navbar navbar-expand-lg navbar-dark">
+                <a class="navbar-brand" style="font-size: 30px" href="#">
+                    <img src="../Assets/hotel.svg" width="40"
+                        height="40" class="d-inline-block align-bottom"
+                        alt="Logo">
+                    Le<b>Hotelier</b>
+                </a> <button class="navbar-toggler" type="button"
+                    data-toggle="collapse" data-target="#navbarNavAltMarkup"
+                    aria-controls="navbarNavAltMarkup" aria-expanded="false"
+                    aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+                <div class="collapse navbar-collapse justify-content-end"
+                    id="navbarNavAltMarkup">
+                    <div class="navbar-nav">
+                        <a class="nav-item nav-link active" href="#">Hotels</a>
+                        <a class="nav-item nav-link" href="#">Experiences</a>
+                        <a class="nav-item nav-link" href="#">Profile</a>
+                        <!-- upon click Sign In will open a sign in modal -->
+                        <a class="nav-item nav-link" id="signOut" href="#"
+                            onclick="restart()">Sign Out</a>
+                    </div>
                 </div>
-            </div>
-        </nav>
+            </nav>
 
-        <!-- Main Content -->
-        <div class="container main-content">
-            <!--  Advanced Search and Favorites -->
-            <div class="row">
-                <!-- Advanced Search Section -->
-                <div class="col-6">
-                    <h1>Have a place in mind?</h1>
-                    <div class="search-criteria">
-                        <h2>Location</h2>
-                        <input type="text" class="form-control
-                            form-control-sm" style="width:75%"
-                            placeholder="Give 'Geneva' a chance">
-                        <div class="row">
-                            <div class="search-criteria date">
-                                <h2>Check in</h2>
-                                <input type="date" class="form-control
-                                    form-control-sm">
-                            </div>
-                            <div class="search-criteria date">
-                                <h2>Check out</h2>
-                                <input type="date" class="form-control
-                                    form-control-sm">
-                            </div>
-                        </div>
-                        <div class="row">
-                            <div class="search-criteria room-info">
-                                <h2>Rooms</h2>
-                                <select class="form-control form-control-sm"
-                                    id="roomNumber">
-                                    <option>1</option>
-                                    <option>2</option>
-                                    <option>3</option>
-                                    <option>4</option>
-                                    <option>5+</option>
-                                </select>
-                            </div>
-                            <div class="search-criteria room-info">
-                                <h2>Adults</h2>
-                                <select class="form-control form-control-sm"
-                                    id="adultNumber">
-                                    <option>1</option>
-                                    <option>2</option>
-                                    <option>3</option>
-                                    <option>4</option>
-                                    <option>5+</option>
-                                </select>
-                                <h3>Aged 18+</h3>
-                            </div>
-                            <div class="search-criteria room-info">
-                                <h2>Children</h2>
-                                <select class="form-control form-control-sm"
-                                    id="childNumber">
-                                    <option>1</option>
-                                    <option>2</option>
-                                    <option>3</option>
-                                    <option>4</option>
-                                    <option>5+</option>
-                                </select>
-                                <h3>0-17</h3>
-                            </div>
-                        </div>
-                        <div class="row">
-                            <h2 style="width:100%">Keywords</h2>
-                            <i class="fa fa-plus" id="editButton"
-                                style="color:#646464; margin-right: 2%"
-                                onclick="addKeyword()"></i>
-                            <div class="pref-list"></div>
-                        </div>
-                        <div class="row">
-                        <!-- TODO:Add Pricing Bar  -->
-                        </div>
-                        <div class="row">
-                            <div class="search-criteria stars">
-                                <h2>Star Rating</h2>
-                                <div class="form-group">
-                                    <select multiple class="form-control"
-                                        id="star-rating">
-                                        <option>★</option>
-                                        <option>★★</option>
-                                        <option>★★★</option>
-                                        <option>★★★★</option>
-                                        <option>★★★★★</option>
-                                    </select>
+            <!-- Main Content -->
+            <div class="container main-content">
+                <h6>Hotels</h6>
+                <!--  Advanced Search and Favorites -->
+                <div class="row">
+                    <!-- Advanced Search Section -->
+                    <div class="col-6">
+                        <h1>Detailed Search</h1>
+                        <div class="search-criteria">
+                            <h2>Location</h2>
+                            <input type="text" class="form-control
+                                form-control-sm" style="width:75%"
+                                placeholder="Give 'Geneva' a chance">
+                            <div class="row">
+                                <div class="search-criteria date">
+                                    <h2>Check in</h2>
+                                    <input type="date" class="form-control
+                                        form-control-sm">
+                                </div>
+                                <div class="search-criteria date">
+                                    <h2>Check out</h2>
+                                    <input type="date" class="form-control
+                                        form-control-sm">
                                 </div>
                             </div>
+                            <div class="row">
+                                <div class="search-criteria room-info">
+                                    <h2>Rooms</h2>
+                                    <select class="form-control form-control-sm"
+                                        id="roomNumber">
+                                        <option>1</option>
+                                        <option>2</option>
+                                        <option>3</option>
+                                        <option>4</option>
+                                        <option>5+</option>
+                                    </select>
+                                </div>
+                                <div class="search-criteria room-info">
+                                    <h2>Adults</h2>
+                                    <select class="form-control form-control-sm"
+                                        id="adultNumber">
+                                        <option>1</option>
+                                        <option>2</option>
+                                        <option>3</option>
+                                        <option>4</option>
+                                        <option>5+</option>
+                                    </select>
+                                    <h3>Aged 18+</h3>
+                                </div>
+                                <div class="search-criteria room-info">
+                                    <h2>Children</h2>
+                                    <select class="form-control form-control-sm"
+                                        id="childNumber">
+                                        <option>1</option>
+                                        <option>2</option>
+                                        <option>3</option>
+                                        <option>4</option>
+                                        <option>5+</option>
+                                    </select>
+                                    <h3>0-17</h3>
+                                </div>
+                            </div>
+                            <div class="row">
+                                <h2 style="width:100%">Keywords</h2>
+                                <i class="fa fa-plus" id="editButton"
+                                    style="color:#646464; margin-right: 2%"
+                                    onclick="addKeyword()"></i>
+                                <div class="pref-list"></div>
+                            </div>
+                            <div class="row">
+                                <!-- TODO:Add Pricing Bar  -->
+                            </div>
+                            <div class="row">
+                                <div class="search-criteria stars">
+                                    <h2>Star Rating</h2>
+                                    <div class="form-group">
+                                        <select multiple class="form-control"
+                                            id="star-rating">
+                                            <option>★</option>
+                                            <option>★★</option>
+                                            <option>★★★</option>
+                                            <option>★★★★</option>
+                                            <option>★★★★★</option>
+                                        </select>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="search-criteria">
+                                <button type="button" class="btn btn-primary">Go!</button>
+                            </div>
                         </div>
-                        <div class="search-criteria">
-                            <button type="button" class="btn btn-primary">Go!</button>
+
+                    </div>
+                    <!-- Favorites Section -->
+                    <div class="col-6">
+                        <h1>Favorites</h1>
+                        <div class="favorites-group">
+                            <h2>Stockholm</h2>
+                            <h2>Prague</h2>
+                            <a>more</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Footer Section -->
+            <footer class="footer">
+                <div class="container">
+                    <div class="row footer-nav"> <a
+                            style="color:#8E8E93">© Le
+                            Hotelier Inc. 2018</a>
+                        <div id="footerMid">
+                            <a href="#">About</a>
+                            <a href="#">Careers</a>
+                            <a href="#">Help</a>
+                            <a href="#">Privacy</a>
+                        </div>
+                        <div>
+                            <a href="http://www.instagram.com"><i
+                                    class="fa
+                                    fa-instagram"></i></a>
+                            <a href="http://www.twitter.com"><i
+                                    class="fa
+                                    fa-twitter"></i></a>
+                            <a href="http://www.facebook.com"><i
+                                    class="fa
+                                    fa-facebook"></i></a>
                         </div>
                     </div>
 
                 </div>
-                <!-- Favorites Section -->
-                <div class="col-6">
-                    <h1>Favorites</h1>
-
-                </div>
-            </div>
+            </footer>
         </div>
-
-        <!-- Footer Section -->
-        <footer class="footer">
-            <div class="container">
-                <div class="row footer-nav"> <a
-                        style="color:#8E8E93">© Le
-                        Hotelier Inc. 2018</a>
-                    <div id="footerMid">
-                        <a href="#">About</a>
-                        <a href="#">Careers</a>
-                        <a href="#">Help</a>
-                        <a href="#">Privacy</a>
-                    </div>
-                    <div>
-                        <a href="http://www.instagram.com"><i
-                                class="fa
-                                fa-instagram"></i></a>
-                        <a href="http://www.twitter.com"><i
-                                class="fa
-                                fa-twitter"></i></a>
-                        <a href="http://www.facebook.com"><i
-                                class="fa
-                                fa-facebook"></i></a>
-                    </div>
-                </div>
-
-            </div>
-        </footer>
     </body>
 </html>
