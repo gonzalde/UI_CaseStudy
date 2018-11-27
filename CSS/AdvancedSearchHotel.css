@@ -81,6 +81,9 @@
     color: #646464;
     font-size: 1.2em;
 }
+.group-favorites-group{
+    display: none;
+}
 .group-favorites-group h3{
     padding-top: 2%;
     color: #646464;
