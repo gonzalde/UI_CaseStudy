@@ -69,4 +69,50 @@ ul > li:before {
 }
 #reviews{
     background-color:lightgray;
+    height: 200px;
+    padding-left: 9px;
 }
+.tabs {
+    padding-left: 0px;
+    position: relative;   
+    min-height: 200px; /* This part sucks */
+    clear: both;
+    margin: 25px 0;
+  }
+  .tab {
+    border-radius: 10%;
+    float: left;
+  }
+  .tab label {
+    border-radius: 20%;
+    background: darkgrey; 
+    padding: 5px;
+    width: 150px; 
+    border: 1px solid #ccc; 
+    margin-left: -1px; 
+    position: relative;
+    left: 1px; 
+    text-align: center;
+  }
+  .tab [type=radio] {
+    display: none;   
+  }
+  .content {
+    border-radius: 5%;
+    position: absolute;
+    top: 28px;
+    left: 0;
+    background: white;
+    right: 0;
+    bottom: 0;
+    padding: 20px;
+    border: 1px solid #ccc; 
+  }
+  [type=radio]:checked ~ label {
+    background: white;
+    border-bottom: 1px solid white;
+    z-index: 2;
+  }
+  [type=radio]:checked ~ label ~ .content {
+    z-index: 1;
+  }

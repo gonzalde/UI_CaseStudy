@@ -50,7 +50,6 @@ function createCookies(evt) {
         }
         setCookie(document.getElementById('rEmail').value, JSON.stringify(user));
         logIn();
-        signedIn();
     }
     else{
         restart();
