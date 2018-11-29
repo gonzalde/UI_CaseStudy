@@ -124,6 +124,13 @@ function restart() {
     deleteCookie("user");
     $('html, body').css('background-image', 'url("../Assets/landingBackground.png")');
     $('#name-greeting').text("");
+    $('#quick-search-title').text("Have a place in mind?");
+    $('#search-button').css('background-color', '#76B8FF');
+    $('#search-button').css('border-color', '#76B8FF');
+    $('#search-button').css('color', 'white');
+    $('#second-title').text("Maybe a curated experience...");
+    $(".past-trips-group").hide();
+    $(".experiences-group").show();
     document.getElementById("registerButton").innerHTML = "Register";
     document.getElementById("signInButton").style.display = "block"
     document.getElementById("signOutButton").style.display = "none";
