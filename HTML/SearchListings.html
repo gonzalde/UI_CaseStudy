@@ -19,56 +19,74 @@
         <script src="../JS/SearchListings.js"></script>
     </head>
     <body style="background-color:#76B8FF">
-        <!-- Top Navbar -->
-        <nav class="navbar navbar-expand-lg navbar-dark">
-            <a class="navbar-brand" style="font-size: 30px" href="#">
-                <img src="../Assets/hotel.svg" width="40"
-                    height="40" class="d-inline-block align-bottom" alt="Logo">
-                Le<b>Hotelier</b>
-            </a> <button class="navbar-toggler" type="button"
-                data-toggle="collapse" data-target="#navbarNavAltMarkup"
-                aria-controls="navbarNavAltMarkup" aria-expanded="false"
-                aria-label="Toggle navigation">
-                <span class="navbar-toggler-icon"></span>
-            </button>
-            <div class="collapse navbar-collapse justify-content-end"
-                id="navbarNavAltMarkup">
-                <div class="navbar-nav">
-                    <a class="nav-item nav-link" href="#">Hotels</a>
-                    <a class="nav-item nav-link" href="#">Experiences</a>
-                    <a class="nav-item nav-link" href="#">Profile</a>
-                    <!-- upon click Sign In will open a sign in modal -->
-                    <a class="nav-item nav-link" id="signOut" href="#">Sign Out</a>
-                </div>
-            </div>
-        </nav>
+        <div id="body-container">
 
-        <!-- Footer Section -->
-        <footer class="footer">
-            <div class="container">
-                <div class="row footer-nav"> <a
-                        style="color:#8E8E93">© Le
-                        Hotelier Inc. 2018</a>
-                    <div id="footerMid">
-                        <a href="#">About</a>
-                        <a href="#">Careers</a>
-                        <a href="#">Help</a>
-                        <a href="#">Privacy</a>
-                    </div>
-                    <div>
-                        <a href="http://www.instagram.com"><i
-                                class="fa
-                                fa-instagram"></i></a>
-                        <a href="http://www.twitter.com"><i
-                                class="fa
-                                fa-twitter"></i></a>
-                        <a href="http://www.facebook.com"><i
-                                class="fa
-                                fa-facebook"></i></a>
+            <!-- Top Navbar -->
+            <nav class="navbar navbar-expand-lg navbar-dark">
+                <a class="navbar-brand" style="font-size: 30px" href="#">
+                    <img src="../Assets/hotel.svg" width="40"
+                        height="40" class="d-inline-block align-bottom"
+                        alt="Logo">
+                    Le<b>Hotelier</b>
+                </a> <button class="navbar-toggler" type="button"
+                    data-toggle="collapse" data-target="#navbarNavAltMarkup"
+                    aria-controls="navbarNavAltMarkup" aria-expanded="false"
+                    aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+                <div class="collapse navbar-collapse justify-content-end"
+                    id="navbarNavAltMarkup">
+                    <div class="navbar-nav">
+                        <a class="nav-item nav-link" href="#">Hotels</a>
+                        <a class="nav-item nav-link" href="#">Experiences</a>
+                        <a class="nav-item nav-link" href="#">Profile</a>
+                        <!-- upon click Sign In will open a sign in modal -->
+                        <a class="nav-item nav-link" id="signOut" href="#">Sign
+                            Out</a>
                     </div>
                 </div>
+            </nav>
 
+            <!-- Main Content -->
+            <div class="container main-content">
+                <h6>Search Listings</h6>
+                <div class="row">
+                    <!-- Listing Results Section -->
+                    <div class="col-6">
+                        <h1>Results for</h1>
+                        <div class="listing-results">
+
+                        </div>
+                    </div>
+                </div>
             </div>
-        </footer>
+
+            <!-- Footer Section -->
+            <footer class="footer">
+                <div class="container">
+                    <div class="row footer-nav"> <a
+                            style="color:#8E8E93">© Le
+                            Hotelier Inc. 2018</a>
+                        <div id="footerMid">
+                            <a href="#">About</a>
+                            <a href="#">Careers</a>
+                            <a href="#">Help</a>
+                            <a href="#">Privacy</a>
+                        </div>
+                        <div>
+                            <a href="http://www.instagram.com"><i
+                                    class="fa
+                                    fa-instagram"></i></a>
+                            <a href="http://www.twitter.com"><i
+                                    class="fa
+                                    fa-twitter"></i></a>
+                            <a href="http://www.facebook.com"><i
+                                    class="fa
+                                    fa-facebook"></i></a>
+                        </div>
+                    </div>
+                </div>
+            </footer>
+        </div>
     </body>
 </html>

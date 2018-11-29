@@ -64,8 +64,13 @@ function logIn(){
     signedIn = true;
 }
 
-//function to limity functionality to people who are not logged in
+function updateLoggedInUI(){
+    $('html, body').css('background-image', 'none'); 
+    $('html, body').css('background-color', '#76B8FF'); 
 
+}
+
+//function to limity functionality to people who are not logged in
 document.getElementById("hotelButton").addEventListener('click', limitUserHotels);
 document.getElementById("experienceButton").addEventListener('click', limitUserExperience);
 
@@ -85,6 +90,7 @@ function limitUserHotels(){
     }
 }
 //end of limit functions
+
 
 //function to validate if there is an email/password pair saved to cookies
 
