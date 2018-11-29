@@ -21,7 +21,7 @@ function getCookie(cname) {
 function checkRepeatCookie() {
     var user = getCookie(document.getElementById('rEmail').value);
     if (user != "") {
-        alert("there is already an account associated with that email");
+        alert("There is already an account associated with this email!");
         return false;
     } else {
         return true;
@@ -112,10 +112,10 @@ function validate() {
             setCookie('user', loginText);
             logIn();
         } else {
-            alert("incorrect password");
+            alert("Incorrect password!");
         }
     } else {
-        alert("no user associated with this email");
+        alert("No user associated with this email!");
     }
 }
 
