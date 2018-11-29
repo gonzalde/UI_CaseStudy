@@ -1,5 +1,12 @@
+html,body{
+    height: 100%;
+    margin:0;
+    padding:0;
+}
+
 /* Top Navbar Styling */
 .navbar {
+    position: fixed;
     background-color: transparent;
     background: transparent;
     border-color: transparent;
@@ -8,6 +15,16 @@
 
  .navbar b{
     font-size: 30px;
+ }
+
+ .main-content{
+    padding:10px;
+    padding-bottom:70px;  
+ }
+
+ #body-container {
+    min-height:100%;
+    position:relative;
  }
 
 /* Footer Styling */

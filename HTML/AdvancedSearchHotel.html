@@ -1,0 +1,305 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <title>LeHotelier-Hotel Search</title>
+        <link rel="shortcut icon" href="../Assets/favicon.ico">
+        <meta name="viewport" content="width=device-width, initial-scale=1,
+            shrink-to-fit=no">
+        <meta charset="utf-8" />
+        <link rel="stylesheet" href="../CSS/GlobalStyle.css">
+        <link rel="stylesheet" href="../CSS/AdvancedSearchHotel.css">
+        <link rel="stylesheet"
+            href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css">
+        <link rel="stylesheet"
+            href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+        <script
+            src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+        <script
+            src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/js/bootstrap.min.js"></script>
+        <script src="../JS/AdvancedSearchHotel.js"></script>
+    </head>
+    <body style="background-color:#76B8FF">
+        <div id="body-container">
+            <!-- Top Navbar -->
+            <nav class="navbar navbar-expand-lg navbar-dark">
+                <a class="navbar-brand" style="font-size: 30px" href="#">
+                    <img src="../Assets/hotel.svg" width="40"
+                        height="40" class="d-inline-block align-bottom"
+                        alt="Logo">
+                    Le<b>Hotelier</b>
+                </a> <button class="navbar-toggler" type="button"
+                    data-toggle="collapse" data-target="#navbarNavAltMarkup"
+                    aria-controls="navbarNavAltMarkup" aria-expanded="false"
+                    aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+                <div class="collapse navbar-collapse justify-content-end"
+                    id="navbarNavAltMarkup">
+                    <div class="navbar-nav">
+                        <a class="nav-item nav-link active" href="#">Hotels</a>
+                        <a class="nav-item nav-link" href="#">Experiences</a>
+                        <a class="nav-item nav-link" href="#">Profile</a>
+                        <!-- upon click Sign In will open a sign in modal -->
+                        <a class="nav-item nav-link" id="signOut" href="#"
+                            onclick="restart()">Sign Out</a>
+                    </div>
+                </div>
+            </nav>
+
+            <!-- Main Content -->
+            <div class="container main-content">
+                <h6>Hotels</h6>
+                <!--  Advanced Search and Favorites -->
+                <div class="row">
+                    <!-- Advanced Search Section -->
+                    <div class="col-6">
+                        <h1>Detailed Search</h1>
+                        <div class="search-criteria">
+                            <h2>Location</h2>
+                            <input type="text" class="form-control
+                                form-control-sm" style="width:75%"
+                                placeholder="Give 'Geneva' a chance">
+                            <div class="row">
+                                <div class="search-criteria date">
+                                    <h2>Check in</h2>
+                                    <input type="date" class="form-control
+                                        form-control-sm">
+                                </div>
+                                <div class="search-criteria date">
+                                    <h2>Check out</h2>
+                                    <input type="date" class="form-control
+                                        form-control-sm">
+                                </div>
+                            </div>
+                            <div class="row">
+                                <div class="search-criteria room-info">
+                                    <h2>Rooms</h2>
+                                    <select class="form-control form-control-sm"
+                                        id="roomNumber">
+                                        <option>1</option>
+                                        <option>2</option>
+                                        <option>3</option>
+                                        <option>4</option>
+                                        <option>5+</option>
+                                    </select>
+                                </div>
+                                <div class="search-criteria room-info">
+                                    <h2>Adults</h2>
+                                    <select class="form-control form-control-sm"
+                                        id="adultNumber">
+                                        <option>1</option>
+                                        <option>2</option>
+                                        <option>3</option>
+                                        <option>4</option>
+                                        <option>5+</option>
+                                    </select>
+                                    <h3>Aged 18+</h3>
+                                </div>
+                                <div class="search-criteria room-info">
+                                    <h2>Children</h2>
+                                    <select class="form-control form-control-sm"
+                                        id="childNumber">
+                                        <option>1</option>
+                                        <option>2</option>
+                                        <option>3</option>
+                                        <option>4</option>
+                                        <option>5+</option>
+                                    </select>
+                                    <h3>0-17</h3>
+                                </div>
+                            </div>
+                            <div class="row">
+                                <h2 style="width:100%">Keywords</h2>
+                                <i class="fa fa-plus" id="editButton"
+                                    style="color:#646464; margin-right: 2%"
+                                    onclick="addKeyword()"></i>
+                                <div class="pref-list"></div>
+                            </div>
+                            <div class="row">
+                                <!-- TODO:Add Pricing Bar  -->
+                            </div>
+                            <div class="row">
+                                <div class="search-criteria stars">
+                                    <h2>Star Rating</h2>
+                                    <div class="form-group">
+                                        <select multiple class="form-control"
+                                            id="star-rating">
+                                            <option>★</option>
+                                            <option>★★</option>
+                                            <option>★★★</option>
+                                            <option>★★★★</option>
+                                            <option>★★★★★</option>
+                                        </select>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="search-criteria">
+                                <button type="button" class="btn btn-primary">Go!</button>
+                            </div>
+                        </div>
+
+                    </div>
+                    <!-- Favorites Section -->
+                    <div class="col-6">
+                        <div class="row favorites-select">
+                            <h1 onclick="getFavorites()" id="favorites-title">Favorites</h1>
+                            <h1 onclick="getGroupFavorites()"
+                                id="group-favorites-title">Group Favorites</h1>
+                        </div>
+                        <div class="favorites-group">
+                            <h3>Stockholm</h3>
+                            <div class="favorites-listing row">
+                                <img class="favorites-img"
+                                    src="../Assets/bankHotel.png" width="50"
+                                    height="50" alt="bankHotel">
+                                <div class="favorites-info">
+                                    <h5>Bank Hotel</h5>
+                                    <p>Östermalm</p>
+                                    <p style="color: #FEDF00;">★★★★★</p>
+                                </div>
+                                <div class="favorites-pricing float-right">
+                                    <h6>253 &euro;</h6>
+                                    <button>Book</button>
+                                </div>
+                            </div>
+                            <div class="favorites-listing row">
+                                <img class="favorites-img"
+                                    src="../Assets/sheratonHotel.png" width="50"
+                                    height="50" alt="sheratonHotel">
+                                <div class="favorites-info">
+                                    <h5>Sheraton Hotel</h5>
+                                    <p>Kungsholmen</p>
+                                    <p style="color: #FEDF00;">★★★★★</p>
+                                </div>
+                                <div class="favorites-pricing float-right">
+                                    <h6>256 &euro;</h6>
+                                    <button>Book</button>
+                                </div>
+                            </div>
+                            <div class="favorites-listing row">
+                                <img class="favorites-img"
+                                    src="../Assets/hotelJ.png" width="50"
+                                    height="50" alt="hotelJ">
+                                <div class="favorites-info">
+                                    <h5>Hotel J</h5>
+                                    <p>Nacka</p>
+                                    <p style="color: #FEDF00;">★★★★</p>
+                                </div>
+                                <div class="favorites-pricing float-right">
+                                    <h6>174 &euro;</h6>
+                                    <button>Book</button>
+                                </div>
+                            </div>
+
+                            <h3>Prague</h3>
+                            <div class="favorites-listing row">
+                                <img class="favorites-img"
+                                    src="../Assets/ariaHotel.png" width="50"
+                                    height="50" alt="ariaHotel">
+                                <div class="favorites-info">
+                                    <h5>Aria Hotel</h5>
+                                    <p>Malá Strana</p>
+                                    <p style="color: #FEDF00;">★★★★★</p>
+                                </div>
+                                <div class="favorites-pricing float-right">
+                                    <div class="on-sale-group"><span
+                                            class="on-sale">On Sale</span>
+                                        <span class="price">243 &euro;</span></div>
+                                    <button>Book</button>
+                                </div>
+                            </div>
+                            <div class="favorites-listing row">
+                                <img class="favorites-img"
+                                    src="../Assets/cosmopolitan.png" width="50"
+                                    height="50" alt="cosmopolitan">
+                                <div class="favorites-info">
+                                    <h5>Cosmopolitan</h5>
+                                    <p>Florenc</p>
+                                    <p style="color: #FEDF00;">★★★★★</p>
+                                </div>
+                                <div class="favorites-pricing float-right">
+                                    <h6>157 &euro;</h6>
+                                    <button>Book</button>
+                                </div>
+                            </div>
+                            <div class="favorites-listing row">
+                                <img class="favorites-img"
+                                    src="../Assets/laBoutique.png" width="50"
+                                    height="50" alt="laBoutique">
+                                <div class="favorites-info">
+                                    <h5>La Boutique</h5>
+                                    <p>Andêl</p>
+                                    <p style="color: #FEDF00;">★★★★</p>
+                                </div>
+                                <div class="favorites-pricing float-right">
+                                    <h6>144 &euro;</h6>
+                                    <button>Book</button>
+                                </div>
+                            </div>
+                            <a>more</a>
+                        </div>
+                        <div class="group-favorites-group">
+                            <h3>Summer Travels</h3>
+                            <div class="favorites-listing row">
+                                <img class="favorites-img"
+                                    src="../Assets/sheratonHotel.png" width="50"
+                                    height="50" alt="sheratonHotel">
+                                <div class="favorites-info">
+                                    <h5>Sheraton Hotel</h5>
+                                    <p>Kungsholmen, Stockholm</p>
+                                    <p style="color: #FEDF00;">★★★★★</p>
+                                </div>
+                                <div class="favorites-pricing float-right">
+                                    <h6>256 &euro;</h6>
+                                    <button>Book</button>
+                                </div>
+                            </div>
+                            <div class="favorites-listing row">
+                                <img class="favorites-img"
+                                    src="../Assets/cosmopolitan.png" width="50"
+                                    height="50" alt="cosmopolitan">
+                                <div class="favorites-info">
+                                    <h5>Cosmopolitan</h5>
+                                    <p>Florenc, Prague</p>
+                                    <p style="color: #FEDF00;">★★★★★</p>
+                                </div>
+                                <div class="favorites-pricing float-right">
+                                    <h6>157 &euro;</h6>
+                                    <button>Book</button>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Footer Section -->
+            <footer class="footer">
+                <div class="container">
+                    <div class="row footer-nav"> <a
+                            style="color:#8E8E93">© Le
+                            Hotelier Inc. 2018</a>
+                        <div id="footerMid">
+                            <a href="#">About</a>
+                            <a href="#">Careers</a>
+                            <a href="#">Help</a>
+                            <a href="#">Privacy</a>
+                        </div>
+                        <div>
+                            <a href="http://www.instagram.com"><i
+                                    class="fa
+                                    fa-instagram"></i></a>
+                            <a href="http://www.twitter.com"><i
+                                    class="fa
+                                    fa-twitter"></i></a>
+                            <a href="http://www.facebook.com"><i
+                                    class="fa
+                                    fa-facebook"></i></a>
+                        </div>
+                    </div>
+
+                </div>
+            </footer>
+        </div>
+    </body>
+</html>

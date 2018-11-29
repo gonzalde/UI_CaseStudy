@@ -18,109 +18,112 @@
     </head>
     <body style="background-color:#76B8FF">
         <!-- Top Navbar -->
-        <nav class="navbar navbar-expand-lg navbar-dark">
-            <a class="navbar-brand" style="font-size: 30px" href="#">
-                <img src="../Assets/hotel.svg" width="40"
-                    height="40" class="d-inline-block align-bottom" alt="Logo">
-                Le<b>Hotelier</b>
-            </a> <button class="navbar-toggler" type="button"
-                data-toggle="collapse" data-target="#navbarNavAltMarkup"
-                aria-controls="navbarNavAltMarkup" aria-expanded="false"
-                aria-label="Toggle navigation">
-                <span class="navbar-toggler-icon"></span>
-            </button>
-            <div class="collapse navbar-collapse justify-content-end"
-                id="navbarNavAltMarkup">
-                <div class="navbar-nav">
-                    <a class="nav-item nav-link" href="#">Hotels</a>
-                    <a class="nav-item nav-link" href="#">Experiences</a>
-                    <a class="nav-item nav-link" href="#">Profile</a>
-                    <!-- upon click Sign In will open a sign in modal -->
-                    <a class="nav-item nav-link" id="signOut" href="#">Sign Out</a>
+        <div class = "body-container">
+            <nav class="navbar navbar-expand-lg navbar-dark">
+                <a class="navbar-brand" style="font-size: 30px" href="#">
+                    <img src="../Assets/hotel.svg" width="40"
+                        height="40" class="d-inline-block align-bottom" alt="Logo">
+                    Le<b>Hotelier</b>
+                </a> <button class="navbar-toggler" type="button"
+                    data-toggle="collapse" data-target="#navbarNavAltMarkup"
+                    aria-controls="navbarNavAltMarkup" aria-expanded="false"
+                    aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+                <div class="collapse navbar-collapse justify-content-end"
+                    id="navbarNavAltMarkup">
+                    <div class="navbar-nav">
+                        <a class="nav-item nav-link" href="#">Hotels</a>
+                        <a class="nav-item nav-link" href="#">Experiences</a>
+                        <a class="nav-item nav-link" href="#">Profile</a>
+                        <!-- upon click Sign In will open a sign in modal -->
+                        <a class="nav-item nav-link" id="signOut" href="#">Sign Out</a>
+                    </div>
                 </div>
-            </div>
-        </nav>
-
-        <!-- content section -->
-        <div class = "container">
-            <div class = "row justify-content-between" id = "picAndDescript">
-                <div class = "col-5">
-                    <img id = "hotelRoom" src="../Assets/hotelRoom.png" alt="">
-                </div>
-                <div class = "col-5">
-                    <h3 style = "color: #646464">Bank Hotel</h3>
-                    <p style = "color: white;margin-bottom: 1px;">
-                    &Ouml;stermalm Stockholm
-                    </p>
-                    <span class="fa fa-star checked"></span>
-                    <span class="fa fa-star checked"></span>
-                    <span class="fa fa-star checked"></span>
-                    <span class="fa fa-star checked"></span>
-                    <span class="fa fa-star checked"></span>
-                </div>
-                <div class = "col-2" id = "Price">
-                    <h6 style = "color: #646464;">Per Night</h6>
-                    <p style = "color: white; margin-bottom: 4px;">253&euro;</p>
-                    <button class="btn btn-light" id = "bookButton">Book</button>
-                </div>
-            </div>
-            <div class = "row justify-content-between">
-                <div id = "description">
-                        <p style = "color:white">This elegant hotel is set in an ideal central Stockholm location, steps from Östermalm district's notable Strandvägen and Stureplan. The Bank Hotel features an on-site Mediterranean restaurant and fitness centre, along with free WiFi. Kungsträdgården Metro Station is right around the corner, 100 m away. Housed in a former bank building, all rooms are designed with stylish furnishings and feature a flat-screen TV, minibar and coffee facilities. Bathrobes, slippers and plush arm chairs provide further relaxation. Other details include luxury toiletries in the marble bathrooms.</p>
-                </div>
-            </div>
-            <div class = "row">
-                <div class = "col-2" id ="QuickFacts">
-                    <strong style = "color: #646464;">Quick Facts</strong>
-                    <ul>
-                        <li>Free Wifi</li>
-                        <li>Parking Available</li>
-                        <li>Fitness Center</li>
-                        <li>Room Service</li>
-                        <li>Bar</li>
-                    </ul>
-                </div>
-                <div class="col-2" id = "mapDiv">
-                    <strong>Location</strong>
-                    <img id = "map" src="../Assets/map.png" alt="">
-                </div>
-                <div class = "col-2" id ="share">
-                    <p>Share</p>
-                    <p>Remove from Favorites</p>
-                </div>
-                <div class = "col-6 container" id="reviews">
-                    
-                </div>
-            </div>
+            </nav>
+        
+                    <!-- content section -->
+                    <div class = "container">
+                        <div class = "row justify-content-between" id = "picAndDescript">
+                            <div class = "col-5">
+                                <img id = "hotelRoom" src="../Assets/hotelRoom.png" alt="">
+                            </div>
+                            <div class = "col-5">
+                                <h3 style = "color: #646464">Bank Hotel</h3>
+                                <p style = "color: white;margin-bottom: 1px;">
+                                &Ouml;stermalm Stockholm
+                                </p>
+                                <span class="fa fa-star checked"></span>
+                                <span class="fa fa-star checked"></span>
+                                <span class="fa fa-star checked"></span>
+                                <span class="fa fa-star checked"></span>
+                                <span class="fa fa-star checked"></span>
+                            </div>
+                            <div class = "col-2" id = "Price">
+                                <h6 style = "color: #646464;">Per Night</h6>
+                                <p style = "color: white; margin-bottom: 4px;">253&euro;</p>
+                                <button class="btn btn-light" id = "bookButton">Book</button>
+                            </div>
+                        </div>
+                        <div class = "row justify-content-between">
+                            <div id = "description">
+                                    <p style = "color:white">This elegant hotel is set in an ideal central Stockholm location, steps from Östermalm district's notable Strandvägen and Stureplan. The Bank Hotel features an on-site Mediterranean restaurant and fitness centre, along with free WiFi. Kungsträdgården Metro Station is right around the corner, 100 m away. Housed in a former bank building, all rooms are designed with stylish furnishings and feature a flat-screen TV, minibar and coffee facilities. Bathrobes, slippers and plush arm chairs provide further relaxation. Other details include luxury toiletries in the marble bathrooms.</p>
+                            </div>
+                        </div>
+                        <div class = "row">
+                            <div class = "col-2" id ="QuickFacts">
+                                <strong style = "color: #646464;">Quick Facts</strong>
+                                <ul>
+                                    <li>Free Wifi</li>
+                                    <li>Parking Available</li>
+                                    <li>Fitness Center</li>
+                                    <li>Room Service</li>
+                                    <li>Bar</li>
+                                </ul>
+                            </div>
+                            <div class="col-2" id = "mapDiv">
+                                <strong>Location</strong>
+                                <img id = "map" src="../Assets/map.png" alt="">
+                            </div>
+                            <div class = "col-2" id ="share">
+                                <p>Share</p>
+                                <p>Remove from Favorites</p>
+                            </div>
+                            <div class = "col-6 container" id="reviews">
+                                
+                            </div>
+                        </div>
+                    </div>
+            
+                    <!-- Footer Section -->
+                    <footer class="footer">
+                        <div class="container">
+                            <div class="row footer-nav"> <a
+                                    style="color:#8E8E93">&copy; Le
+                                    Hotelier Inc. 2018</a>
+                                <div id="footerMid">
+                                    <a href="#">About</a>
+                                    <a href="#">Careers</a>
+                                    <a href="#">Help</a>
+                                    <a href="#">Privacy</a>
+                                </div>
+                                <div>
+                                    <a href="http://www.instagram.com"><i
+                                            class="fa
+                                            fa-instagram"></i></a>
+                                    <a href="http://www.twitter.com"><i
+                                            class="fa
+                                            fa-twitter"></i></a>
+                                    <a href="http://www.facebook.com"><i
+                                            class="fa
+                                            fa-facebook"></i></a>
+                                </div>
+                            </div>
+            
+                        </div>
+                    </footer>
         </div>
-
-        <!-- Footer Section -->
-        <footer class="footer">
-            <div class="container">
-                <div class="row footer-nav"> <a
-                        style="color:#8E8E93">&copy; Le
-                        Hotelier Inc. 2018</a>
-                    <div id="footerMid">
-                        <a href="#">About</a>
-                        <a href="#">Careers</a>
-                        <a href="#">Help</a>
-                        <a href="#">Privacy</a>
-                    </div>
-                    <div>
-                        <a href="http://www.instagram.com"><i
-                                class="fa
-                                fa-instagram"></i></a>
-                        <a href="http://www.twitter.com"><i
-                                class="fa
-                                fa-twitter"></i></a>
-                        <a href="http://www.facebook.com"><i
-                                class="fa
-                                fa-facebook"></i></a>
-                    </div>
-                </div>
-
-            </div>
-        </footer>
+       
         <script src="../JS/HotelPage.js"></script>
     </body>
 </html>

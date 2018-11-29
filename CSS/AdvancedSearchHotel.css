@@ -1,0 +1,172 @@
+/* Main Content Styling */
+.main-content{
+    margin-top: 2.7%;
+}
+.main-content h1{
+    color: white;
+    font-size: 1.6em;
+}
+.main-content h2{
+    color: white;
+    font-weight: bold;
+    font-size: 0.9em;
+}
+.main-content h6{
+    color: white;
+    font-size: 2em;
+    font-weight: bold;
+    padding-left: 15px;
+}
+.main-content div{
+    margin-left: 0px;
+    margin-right: 0px;
+}
+/* Quick Search styling */
+.search-criteria{
+    padding-top: 4%;
+}
+.search-criteria h3{
+    padding-top: 2%;
+    color: white;
+    font-size: 0.6em;
+}
+.search-criteria button{
+    margin-right: 25%;
+    float: right;
+    background-color: white;
+    border-color: white;
+    color: #76B8FF;
+}
+.date input{
+    width: 90%;
+    font-size: 0.7em;
+}
+.room-info{
+    padding-right: 5%;
+}
+.stars option{
+    color: #FEDF00;
+}
+.keyword-option {
+    padding-left: 1%;
+    padding-right: 1%;
+    margin-left: 1% !important;
+    margin-right: 1% !important;
+    background-color: white;
+    color: #646464;
+    display: inline-block;
+    border-radius: 4px;
+    font-weight: normal;
+    font-size: 0.9em;
+    max-width: 100%;
+} 
+.keyword-option p{
+    margin: 0;
+    display: inline-block;
+} 
+
+/* Favorites Section Styling */
+.favorites-select h1{
+    margin-right: 2%;
+}
+.favorites-select h1:active{
+    color: #646464;
+    text-decoration: underline;
+}
+.favorites-group{
+    margin-top: 4%;
+}
+.favorites-group h3{
+    padding-top: 2%;
+    color: #646464;
+    font-size: 1.2em;
+}
+.group-favorites-group{
+    display: none;
+}
+.group-favorites-group h3{
+    padding-top: 2%;
+    color: #646464;
+    font-size: 1.2em;
+}
+.favorites-group a{
+    font-size: 0.8em;
+    font-weight: bold;
+    color: #646464 !important;
+    margin:0;
+    text-align: right;
+}
+.favorites-listing{
+    padding: 2% 2% 2% 2%;
+    width: 100%;
+}
+.favorites-img{
+    border-radius: 4px;
+    float: left;
+}
+.favorites-listing h4{
+    font-size: 1.3em;
+    font-weight: 400;
+    color: #646464;
+    margin:0;
+}
+.favorites-listing h5{
+    font-size: 1.4em;
+    color: white;
+    margin:0;
+}
+.favorites-listing p{
+    font-size: .7em;
+    color: #646464;
+    margin:0;
+}
+.favorites-listing h6{
+    font-size: 1em;
+    font-weight: bold;
+    color: #646464;
+    margin:0;
+    text-align: right;
+}
+.favorites-listing button{
+    float:right;
+    background-color: #76B8FF;
+    border-color: #76B8FF;
+}
+.favorites-info{
+    padding-left: 1.5%;
+    float: left;
+    width:35%;
+}
+.favorites-pricing{
+    position: relative;
+    left:auto;
+    right:auto;
+    width: 45%;
+}
+.favorites-pricing button{
+    position: relative;
+    background-color: white;
+    border-color: white;
+    color: #646464;
+    border-radius: 10px;
+    font-size: .8em;
+    display: inline-block;
+}
+.on-sale-group{
+    width:100%;
+    text-align: right;
+}
+.price {
+    font-size: 1em;
+    font-weight: bold;
+    color: #646464;
+    margin:0;
+    text-align: right;
+}
+.on-sale{
+    background-color: #F66E6E;
+    color:white;
+    border-radius: 5px;
+    font-size: .8em;
+    padding: 1%;
+}
