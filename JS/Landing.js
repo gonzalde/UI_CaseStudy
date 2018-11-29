@@ -135,8 +135,9 @@ function restart() {
     document.getElementById("signInButton").style.display = "block"
     document.getElementById("signOutButton").style.display = "none";
 }
+
 function deleteCookie(name) {
-    document.cookie = name + '=;expires=Thu, 01 Jan 1970 00:00:01 GMT;';
+    document.cookie = name + '=;expires=Thu, 09 Sep 1997 00:00:01 GMT; path=/';
 };
 
 
