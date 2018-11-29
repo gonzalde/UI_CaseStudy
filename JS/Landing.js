@@ -61,12 +61,27 @@ function logIn(){
     document.getElementById("signOutButton").style.display = "block";
     document.getElementById("registerButton").innerHTML = "Profile";
     signedIn = true;
+    updateLoggedInUI();
 }
 
 function updateLoggedInUI(){
     $('html, body').css('background-image', 'none'); 
     $('html, body').css('background-color', '#76B8FF'); 
+    $('#quick-search-title').text("Where would you like to go?");
+    var loginText = document.getElementById('logEmail').value;
+    var userJSON = JSON.parse(getCookie(loginText));
+    var loggedInName = userJSON["name"];
+    $('#name-greeting').text("Hi "+loggedInName+",");
+    $('#search-button').css('background-color', 'white'); 
+    $('#search-button').css('border-color', 'white'); 
+    $('#search-button').css('color', '#76B8FF'); 
+    addPastTrips();
+}
 
+function addPastTrips(){
+    $('#second-title').text("How about a past trip...");
+    $(".experiences-group").hide();
+    $(".past-trips-group").show();
 }
 
 //function to limity functionality to people who are not logged in

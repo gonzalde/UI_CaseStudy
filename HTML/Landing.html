@@ -55,10 +55,11 @@
 
             <!-- Main Content -->
             <div class="container main-content">
+                <h6 id="name-greeting"></h6>
                 <div class="row">
                     <!-- Quick Search Section -->
                     <div class="col-6">
-                        <h1>Have a place in mind?</h1>
+                        <h1 id="quick-search-title">Have a place in mind?</h1>
                         <div class="search-criteria">
                             <h2>Location</h2>
                             <input type="text" class="form-control
@@ -115,59 +116,125 @@
                             </div>
                         </div>
                         <div class="search-criteria">
-                            <button type="button" class="btn btn-primary">Go!</button>
+                            <button type="button" id="search-button" class="btn
+                                btn-primary">Go!</button>
                         </div>
                     </div>
                     <div class="col-6">
                         <!-- Highlighted Experiences Section -->
-                        <h1>Maybe a curated experience...</h1>
+                        <h1 id="second-title">Maybe a curated experience...</h1>
                         <div class="experiences-group">
                             <div class="experience-listing row">
-                                <img class="experience-img"
-                                    src="../Assets/paris.png" width="65"
-                                    height="65" alt="paris">
-                                <div class="experience-info">
+                                <div class="col-auto img"><img
+                                        class="experience-img"
+                                        src="../Assets/paris.png" width="65"
+                                        height="65" alt="paris"></div>
+                                <div class="experience-info col-sm-auto">
                                     <h5>Paris</h5>
                                     <p>6 night stay at 5 star hotels.</p>
                                     <p>Amazing curated view of the Louvre.</p>
                                 </div>
-                                <div class="experience-pricing float-right">
+                                <div class="experience-pricing float-right col">
                                     <h6>Starting at</h6>
                                     <h6>900 &euro;</h6>
                                 </div>
                             </div>
                             <div class="experience-listing row">
-                                <img class="experience-img"
-                                    src="../Assets/tokyo.png" width="65"
-                                    height="65" alt="tokyo">
-                                <div class="experience-info">
+                                <div class="col-auto img">
+                                    <img class="experience-img"
+                                        src="../Assets/tokyo.png" width="65"
+                                        height="65" alt="tokyo"></div>
+                                <div class="experience-info col-sm-auto">
                                     <h5>Tokyo</h5>
                                     <p>5 night stay at 5 star hotels.</p>
                                     <p>5 course meal at Michelin restraunt.</p>
                                 </div>
-                                <div class="experience-pricing float-right">
+                                <div class="experience-pricing float-right col">
                                     <h6>Starting at</h6>
                                     <h6>1900 &euro;</h6>
                                 </div>
                             </div>
                             <div class="experience-listing row">
-                                <img class="experience-img"
-                                    src="../Assets/capetown.png" width="65"
-                                    height="65" alt="Capetown">
-                                <div class="experience-info">
+                                <div class="col-auto img">
+                                    <img class="experience-img"
+                                        src="../Assets/capetown.png" width="65"
+                                        height="65" alt="Capetown"></div>
+                                <div class="experience-info col-sm-auto">
                                     <h5>Capetown</h5>
                                     <p>4 night stay at 5 star hotels.</p>
                                     <p>Breathtaking hike up Lion’s head.</p>
                                 </div>
-                                <div class="experience-pricing float-right"
+                                <div class="experience-pricing float-right col"
                                     style="width:48%">
                                     <h6>Starting at</h6>
                                     <h6>1433 &euro;</h6>
                                 </div>
                             </div>
-                            <div class="experience-listing row">
+                            <div class="experience-listing row col-md-auto">
                                 <h4>900+ experiences awaiting</h4>
-                                <div class="float-right" style="width:51%;">
+                                <div class="float-right col">
+                                    <button
+                                        type="button"
+                                        class="btn btn-primary">Aller!</button>
+                                </div>
+                            </div>
+                        </div>
+                        <!-- Past Trips shown when Logged in -->
+                        <div class="past-trips-group">
+                            <div class="experience-listing row">
+                                <div class="col-auto img"><img
+                                        class="experience-img"
+                                        src="../Assets/paris.png" width="65"
+                                        height="65" alt="paris"></div>
+
+                                <div class="experience-info col-sm-auto">
+                                    <h5>Paris</h5>
+                                    <p>3 night stay at Hôtel de Crillon</p>
+                                    <p>Past Stay: September 2018</p>
+                                </div>
+                                <div class="experience-pricing float-right col">
+                                    <h6>312 &euro;</h6>
+                                    <h6>per night<//h6>
+                                </div>
+                            </div>
+                            <div class="experience-listing row">
+                                <div class="col-auto img">
+                                    <img class="experience-img"
+                                        src="../Assets/toronto.png" width="65"
+                                        height="65" alt="toronto"></div>
+                                <div class="experience-info col-sm-auto">
+                                    <h5>Toronto</h5>
+                                    <p>2 night stay at One King West Hotel</p>
+                                    <p>Past Stay: July 2018</p>
+                                </div>
+                                <div class="experience-pricing float-right col">
+                                    <h6>156 &euro;</h6>
+                                    <h6>per night<//h6>
+                                </div>
+                            </div>
+                            <div class="experience-listing row">
+                                <div class="col-auto img">
+                                    <img class="experience-img"
+                                        src="../Assets/singapore.png"
+                                        width="65"
+                                        height="65" alt="singapore"></div>
+                                <div class="experience-info col-sm-auto">
+                                    <h5>Singapore</h5>
+                                    <p>4 night stay at Grand Hyatt
+                                        Singapore.</p>
+                                    <p>Past Stay: May 2018</p>
+                                </div>
+                                <div class="experience-pricing
+                                    float-right
+                                    col">
+                                    <h6>186 &euro;</h6>
+                                    <h6>per night</h6>
+                                </div>
+                            </div>
+                            <div class="experience-listing row">
+                                <div class="col-md-auto"><h4>or a new Experience!</h4>
+                                </div>
+                                <div class="float-right col">
                                     <button
                                         type="button"
                                         class="btn btn-primary">Aller!</button>
@@ -200,15 +267,18 @@
                                 <input id="logEmail" type="email"
                                     placeholder="email">
                                 <h6 style="padding-top: 20px">Password</h6>
-                                <input id="logPassword" type="password"
+                                <input id="logPassword"
+                                    type="password"
                                     placeholder="password">
                             </form>
                         </div>
                         <div class="modal-footer">
-                            <button style="margin-right:325px" class="btn
+                            <button style="margin-right:325px"
+                                class="btn
                                 btn-default" id="submitSignIn"
                                 data-dismiss="modal">Submit</button>
-                            <button type="button" class="btn btn-default"
+                            <button type="button" class="btn
+                                btn-default"
                                 data-dismiss="modal">Close</button>
                         </div>
                     </div>
@@ -217,7 +287,8 @@
             <!-- end of sign in modal -->
 
             <!-- Beginning of registration modal -->
-            <div id="registerModal" class="modal fade" role="dialog">
+            <div id="registerModal" class="modal fade"
+                role="dialog">
                 <div class="modal-dialog">
                     <!-- Modal content-->
                     <div class="modal-content">
@@ -227,13 +298,16 @@
                         <div class="modal-body">
                             <form id="registerInForm">
                                 <h6>Name</h6>
-                                <input type="text" placeholder="Your Name"
+                                <input type="text" placeholder="Your
+                                    Name"
                                     id="rName">
                                 <h6>Email</h6>
-                                <input type="email" placeholder="email"
+                                <input type="email"
+                                    placeholder="email"
                                     id="rEmail">
                                 <h6>Phone Number</h6>
-                                <input type="text" placeholder="Phone Number"
+                                <input type="text"
+                                    placeholder="Phone Number"
                                     id="rPhone">
                                 <h6 style="padding-top: 20px">Password</h6>
                                 <input type="password"
@@ -242,10 +316,12 @@
                             </form>
                         </div>
                         <div class="modal-footer">
-                            <button style="margin-right:325px" class="btn
+                            <button style="margin-right:325px"
+                                class="btn
                                 btn-default" id="saveCookies"
                                 data-dismiss="modal">Submit</button>
-                            <button type="button" class="btn btn-default"
+                            <button type="button" class="btn
+                                btn-default"
                                 data-dismiss="modal">Close</button>
                         </div>
                     </div>
