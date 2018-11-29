@@ -123,6 +123,7 @@ function validate() {
 function restart() {
     deleteCookie("user");
     $('html, body').css('background-image', 'url("../Assets/landingBackground.png")');
+    $('#name-greeting').text("");
     document.getElementById("registerButton").innerHTML = "Register";
     document.getElementById("signInButton").style.display = "block"
     document.getElementById("signOutButton").style.display = "none";
