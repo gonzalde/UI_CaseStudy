@@ -1,3 +1,5 @@
+document.getElementById("signOut").addEventListener('click', restart);
+
 // Used for signing out and returning to the home-page
 function restart() {
     deleteCookie("user");
@@ -8,6 +10,10 @@ function deleteCookie(name) {
     console.log("Cookie deleted!");
     document.cookie = name + '=;expires=Thu, 09 Sep 1997 00:00:01 GMT; path=/';
 };
+
+function goToHotel(){
+    window.location.replace("../HTML/HotelPage.html");
+}
 
 // Adds keywords
 var keywordCounter = 0;

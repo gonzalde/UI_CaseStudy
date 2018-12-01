@@ -59,7 +59,7 @@ function createCookies(evt) {
 
 function logIn() {
     document.getElementById("signInButton").style.display = "none";
-    document.getElementById("signOutButton").style.display = "block";
+    document.getElementById("signOut").style.display = "block";
     document.getElementById("registerButton").innerHTML = "Profile";
     console.log(document.cookie);
     updateLoggedInUI();
@@ -85,7 +85,7 @@ function addPastTrips() {
     $(".past-trips-group").show();
 }
 
-function limitUserHotels() {
+function limitUserAdvancedSearch() {
     if (!checkCookie()) {
         alert("Please sign in or register to access this page!");
     } else {
@@ -125,7 +125,7 @@ function restart() {
     $(".experiences-group").show();
     document.getElementById("registerButton").innerHTML = "Register";
     document.getElementById("signInButton").style.display = "block"
-    document.getElementById("signOutButton").style.display = "none";
+    document.getElementById("signOut").style.display = "none";
 }
 
 function deleteCookie(name) {
@@ -139,9 +139,9 @@ $(document).ready(function () {
     //function that actually creates cookies
     document.getElementById("saveCookies").addEventListener('click', createCookies);
     //Function to limity functionality to people who are not logged in
-    document.getElementById("hotelButton").addEventListener('click', limitUserHotels);
+    document.getElementById("advancedSearch").addEventListener('click', limitUserAdvancedSearch);
     // Performs log out.
-    document.getElementById("signOutButton").addEventListener('click', restart);
+    document.getElementById("signOut").addEventListener('click', restart);
     document.getElementById("submitSignIn").addEventListener('click', validate);
 });
 
