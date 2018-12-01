@@ -80,11 +80,9 @@ ul > li:before {
     margin: 25px 0;
   }
   .tab {
-    border-radius: 10%;
     float: left;
   }
   .tab label {
-    border-radius: 10%;
     background: darkgrey; 
     padding: 5px;
     width: 150px; 
@@ -97,7 +95,7 @@ ul > li:before {
     display: none;   
   }
   .content {
-    border-radius: 5%;
+
     position: absolute;
     top: 28px;
     left: 0;
