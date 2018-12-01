@@ -5,4 +5,35 @@
 .imgHotel {
   width:60%;
   height:auto;
+  border-radius: 10%;
+  margin-top: 20px;
 }
+p{
+  color: #646464;
+}
+#tags{
+  margin-top: 20px;
+}
+.checked{
+  color: rgb(255, 230, 0);
+}
+input{
+  border-radius: 5%;
+  margin-bottom: 10px;
+}
+.fa{
+  display: inline;
+}
+#rateTrip{
+  display: inline;
+}
+br{
+  margin-bottom: 10px;
+}
+h2{
+  color: #646464 !important;
+}
+h3{
+  color: #646464 !important;
+}
+

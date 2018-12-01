@@ -2,6 +2,10 @@
     margin-top: 50px;
     height: 100px;
 }
+
+.btn{
+    color: white
+}
 #hotelRoom{
     width: 450px;
     height: auto;

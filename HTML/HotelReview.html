@@ -56,7 +56,7 @@
                             <span class="fa fa-star checked"></span>
                             <span class="fa fa-star checked"></span>
                         </div>
-                        <div class="tags">
+                        <div id="tags">
                             <button type="button" class="btn">Upscale</button>
                             <button type="button" class="btn btn-secondary">Couples</button>
                             <button type="button" class="btn">Family-friendly</button>
@@ -71,17 +71,23 @@
                     <h2> Leave a review </h2>
                     <form id="hotelReview">
                         <div class="form-group">
-                            <p> Type of trip : </p>
-                            <p> Rate : <span class="fa fa-star checked"></span>
+                            <p style = "display: inline"> Type of trip : </p>
+                            <input id = "tripType" type="text" placeholder="Trip Type">
+                            <br>
+                            <p id = "rateTrip"> Rate : </p>
                                 <span class="fa fa-star checked"></span>
                                 <span class="fa fa-star checked"></span>
                                 <span class="fa fa-star checked"></span>
-                                <span class="fa fa-star checked"></span> </p>
-                            <p> Language(s) : </p>
-
-                            <label for="review">Comment:</label>
+                                <span class="fa fa-star checked"></span>
+                                <span class="fa fa-star checked"></span>
+                                <br>
+                            <p style =  "display: inline"> Language(s) : </p>
+                            <input type="text" placeholder="Languages">
+                            <br>
+                            <p>Comments:</p>
                             <textarea class="form-control" rows="5" id="review"></textarea>
-                            <button type="submit" class="btn btn-default">Submit</button>
+                            <br>
+                            <button type="submit" class="btn btn-light">Submit</button>
                         </div>
                     </form>
                 </div>
