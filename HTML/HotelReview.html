@@ -1,25 +1,28 @@
 <!DOCTYPE html>
 <html lang="en">
 
-<head>
-    <title>LeHotelier-Review</title>
-    <link rel="shortcut icon" href="../Assets/favicon.ico">
-    <meta name="viewport" content="width=device-width, initial-scale=1,
+    <head>
+        <title>LeHotelier-Review</title>
+        <link rel="shortcut icon" href="../Assets/favicon.ico">
+        <meta name="viewport" content="width=device-width, initial-scale=1,
             shrink-to-fit=no">
-    <meta charset="utf-8" />
-    <link rel="stylesheet" href="../CSS/GlobalStyle.css">
-    <link rel="stylesheet" href="../CSS/HotelReview.css">
-    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css">
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
-    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/js/bootstrap.min.js"></script>
-    <script src="../JS/HotelReview.js"></script>
-</head>
+        <meta charset="utf-8" />
+        <link rel="stylesheet" href="../CSS/GlobalStyle.css">
+        <link rel="stylesheet" href="../CSS/HotelReview.css">
+        <link rel="stylesheet"
+            href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css">
+        <link rel="stylesheet"
+            href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+        <script
+            src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+        <script
+            src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/js/bootstrap.min.js"></script>
+    </head>
 
-<body style="background-color:#76B8FF">
-    <!-- Top Navbar -->
-    <nav class="navbar navbar-expand-lg navbar-dark">
-        <a class="navbar-brand" style="font-size: 30px" href="#">
+    <body style="background-color:#76B8FF">
+        <!-- Top Navbar -->
+        <nav class="navbar navbar-expand-lg navbar-dark">
+            <a class="navbar-brand" style="font-size: 30px" href="#">
                 <img src="../Assets/hotel.svg" width="40"
                     height="40" class="d-inline-block align-bottom" alt="Logo">
                 Le<b>Hotelier</b>
@@ -29,59 +32,61 @@
                 aria-label="Toggle navigation">
                 <span class="navbar-toggler-icon"></span>
             </button>
-        <div class="collapse navbar-collapse justify-content-end" id="navbarNavAltMarkup">
-            <div class="navbar-nav">
-                <a class="nav-item nav-link" href="#">Advanced Search</a>
-                <a class="nav-item nav-link" href="#">Profile</a>
-                <!-- upon click Sign In will open a sign in modal -->
-                <a class="nav-item nav-link" id="signOut" href="#">Sign Out</a>
-            </div>
-        </div>
-    </nav>
-
-    <div class="container">
-        <div class="row justify-content-between">
-            <div class="col-6">
-                <div class="description">
-                    <h2> Bank hotel </h2>
-                    <h3> Östermalm, Stockholm </h3>
-                    <div class="rating">
-                        <span class="fa fa-star checked"></span>
-                        <span class="fa fa-star checked"></span>
-                        <span class="fa fa-star checked"></span>
-                        <span class="fa fa-star checked"></span>
-                        <span class="fa fa-star checked"></span>
-                    </div>
-                    <div class="tags">
-                        <button type="button" class="btn">Upscale</button>
-                        <button type="button" class="btn btn-secondary">Couples</button>
-                        <button type="button" class="btn">Family-friendly</button>
-                    </div>
+            <div class="collapse navbar-collapse justify-content-end"
+                id="navbarNavAltMarkup">
+                <div class="navbar-nav">
+                    <a class="nav-item nav-link" href="#">Advanced Search</a>
+                    <a class="nav-item nav-link" href="#">Profile</a>
+                    <!-- upon click Sign In will open a sign in modal -->
+                    <a class="nav-item nav-link" id="signOut" href="#">Sign Out</a>
                 </div>
+            </div>
+        </nav>
 
-                            <img src="../Assets/ariaHotel.png" alt="Los Angeles" class="imgHotel">
-                    
+        <div class="container">
+            <div class="row justify-content-between">
+                <div class="col-6">
+                    <div class="description">
+                        <h2> Bank hotel </h2>
+                        <h3> Östermalm, Stockholm </h3>
+                        <div class="rating">
+                            <span class="fa fa-star checked"></span>
+                            <span class="fa fa-star checked"></span>
+                            <span class="fa fa-star checked"></span>
+                            <span class="fa fa-star checked"></span>
+                            <span class="fa fa-star checked"></span>
+                        </div>
+                        <div class="tags">
+                            <button type="button" class="btn">Upscale</button>
+                            <button type="button" class="btn btn-secondary">Couples</button>
+                            <button type="button" class="btn">Family-friendly</button>
+                        </div>
                     </div>
-                    <div class="col-6">
-                        <h2> Leave a review </h2>
-                        <form id="hotelReview">
-                            <div class="form-group">
-                                <p> Type of trip : </p>
-                                <p> Rate : <span class="fa fa-star checked"></span>
+
+                    <img src="../Assets/ariaHotel.png" alt="Los Angeles"
+                        class="imgHotel">
+
+                </div>
+                <div class="col-6">
+                    <h2> Leave a review </h2>
+                    <form id="hotelReview">
+                        <div class="form-group">
+                            <p> Type of trip : </p>
+                            <p> Rate : <span class="fa fa-star checked"></span>
                                 <span class="fa fa-star checked"></span>
                                 <span class="fa fa-star checked"></span>
                                 <span class="fa fa-star checked"></span>
                                 <span class="fa fa-star checked"></span> </p>
-                                <p> Language(s) : </p>
+                            <p> Language(s) : </p>
 
-                                <label for="review">Comment:</label>
-                                <textarea class="form-control" rows="5" id="review"></textarea>
-                                <button type="submit" class="btn btn-default">Submit</button>
-                            </div>
-                        </form>
-                    </div>
+                            <label for="review">Comment:</label>
+                            <textarea class="form-control" rows="5" id="review"></textarea>
+                            <button type="submit" class="btn btn-default">Submit</button>
+                        </div>
+                    </form>
                 </div>
             </div>
+        </div>
 
         <!-- Footer Section -->
         <footer class="footer">
@@ -100,17 +105,17 @@
                         <a href="http://www.instagram.com"><i
                                 class="fa
                                 fa-instagram"></i></a>
-                            <a href="http://www.twitter.com"><i
+                        <a href="http://www.twitter.com"><i
                                 class="fa
                                 fa-twitter"></i></a>
-                            <a href="http://www.facebook.com"><i
+                        <a href="http://www.facebook.com"><i
                                 class="fa
                                 fa-facebook"></i></a>
-                        </div>
                     </div>
-
                 </div>
-            </footer>
-</body>
 
+            </div>
+        </footer>
+    </body>
+    <script src="../JS/HotelReview.js"></script>
 </html>
