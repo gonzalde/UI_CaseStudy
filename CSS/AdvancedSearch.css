@@ -75,6 +75,10 @@
 }
 .favorites-group{
     margin-top: 4%;
+    background-color: rgba(255, 255, 255, 0.8);;
+    border-radius: 12px;
+    padding-left: 5%;
+    padding-bottom: 1.5%;
 }
 .favorites-group h3{
     padding-top: 2%;
@@ -82,7 +86,12 @@
     font-size: 1.2em;
 }
 .group-favorites-group{
+    margin-top: 4%;
     display: none;
+    background-color: rgba(255, 255, 255, 0.8);;
+    border-radius: 12px;
+    padding-left: 5%;
+    padding-bottom: 1.5%;
 }
 .group-favorites-group h3{
     padding-top: 2%;
@@ -112,7 +121,7 @@
 }
 .favorites-listing h5{
     font-size: 1.4em;
-    color: white;
+    color: #646464;
     margin:0;
 }
 .favorites-listing p{
@@ -145,9 +154,9 @@
 }
 .favorites-pricing button{
     position: relative;
-    background-color: white;
-    border-color: white;
-    color: #646464;
+    background-color: #76B8FF;
+    border-color: #76B8FF;
+    color: white;
     border-radius: 10px;
     font-size: .8em;
     display: inline-block;
@@ -169,4 +178,10 @@
     border-radius: 5px;
     font-size: .8em;
     padding: 1%;
+}
+.type-form{
+    width:25% !important;
+    margin-bottom: 4%;
+
+    
 }

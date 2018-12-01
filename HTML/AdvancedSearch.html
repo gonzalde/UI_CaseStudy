@@ -7,7 +7,7 @@
             shrink-to-fit=no">
         <meta charset="utf-8" />
         <link rel="stylesheet" href="../CSS/GlobalStyle.css">
-        <link rel="stylesheet" href="../CSS/AdvancedSearchHotel.css">
+        <link rel="stylesheet" href="../CSS/AdvancedSearch.css">
         <link rel="stylesheet"
             href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css">
         <link rel="stylesheet"
@@ -36,8 +36,8 @@
                 <div class="collapse navbar-collapse justify-content-end"
                     id="navbarNavAltMarkup">
                     <div class="navbar-nav">
-                        <a class="nav-item nav-link active" href="#">Hotels</a>
-                        <a class="nav-item nav-link" href="#">Experiences</a>
+                        <a class="nav-item nav-link active" href="#">Advanced
+                            Search</a>
                         <a class="nav-item nav-link" href="#">Profile</a>
                         <!-- upon click Sign In will open a sign in modal -->
                         <a class="nav-item nav-link" id="signOut" href="#"
@@ -48,13 +48,21 @@
 
             <!-- Main Content -->
             <div class="container main-content">
-                <h6>Hotels</h6>
+                <div class="row favorites-select">
+                    <h6>Hotels & Experiences</h6>
+                </div>
                 <!--  Advanced Search and Favorites -->
                 <div class="row">
                     <!-- Advanced Search Section -->
                     <div class="col-6">
-                        <h1>Detailed Search</h1>
+                        <h1>Advanced Search</h1>
                         <div class="search-criteria">
+                          <h2>Trip Type</h2>
+                                <select class="form-control form-control-sm type-form"
+                                    id="tripType">
+                                    <option>Hotel</option>
+                                    <option>Experience</option>
+                                </select>
                             <h2>Location</h2>
                             <input type="text" class="form-control
                                 form-control-sm" style="width:75%"
@@ -178,15 +186,15 @@
                             </div>
                             <div class="favorites-listing row">
                                 <img class="favorites-img"
-                                    src="../Assets/hotelJ.png" width="50"
-                                    height="50" alt="hotelJ">
+                                    src="../Assets/swedishCruise.jpg" width="50"
+                                    height="50" alt="swedishCruise">
                                 <div class="favorites-info">
-                                    <h5>Hotel J</h5>
-                                    <p>Nacka</p>
+                                    <h5>Swedish Cruise</h5>
+                                    <p>Sweden</p>
                                     <p style="color: #FEDF00;">★★★★</p>
                                 </div>
                                 <div class="favorites-pricing float-right">
-                                    <h6>174 &euro;</h6>
+                                    <h6>974 &euro;</h6>
                                     <button>Book</button>
                                 </div>
                             </div>
@@ -256,15 +264,15 @@
                             </div>
                             <div class="favorites-listing row">
                                 <img class="favorites-img"
-                                    src="../Assets/cosmopolitan.png" width="50"
-                                    height="50" alt="cosmopolitan">
+                                    src="../Assets/pragueExperience.jpg" width="50"
+                                    height="50" alt="pragueExperience">
                                 <div class="favorites-info">
-                                    <h5>Cosmopolitan</h5>
-                                    <p>Florenc, Prague</p>
+                                    <h5>Prague Experience</h5>
+                                    <p>Prague, Czechia</p>
                                     <p style="color: #FEDF00;">★★★★★</p>
                                 </div>
                                 <div class="favorites-pricing float-right">
-                                    <h6>157 &euro;</h6>
+                                    <h6>737 &euro;</h6>
                                     <button>Book</button>
                                 </div>
                             </div>
@@ -302,5 +310,5 @@
             </footer>
         </div>
     </body>
-    <script src="../JS/AdvancedSearchHotel.js"></script>
+    <script src="../JS/AdvancedSearch.js"></script>
 </html>

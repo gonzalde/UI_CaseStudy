@@ -85,19 +85,11 @@ function addPastTrips() {
     $(".past-trips-group").show();
 }
 
-function limitUserExperience() {
-    if (!checkCookie()) {
-        alert("Please sign in or register to access this page!");
-    } else {
-        window.location.replace("../HTML/AdvancedSearchExperience.html");
-    }
-}
-
 function limitUserHotels() {
     if (!checkCookie()) {
         alert("Please sign in or register to access this page!");
     } else {
-        window.location.replace("../HTML/AdvancedSearchHotel.html");
+        window.location.replace("../HTML/AdvancedSearch.html");
     }
 }
 //end of limit functions
@@ -148,7 +140,6 @@ $(document).ready(function () {
     document.getElementById("saveCookies").addEventListener('click', createCookies);
     //Function to limity functionality to people who are not logged in
     document.getElementById("hotelButton").addEventListener('click', limitUserHotels);
-    document.getElementById("experienceButton").addEventListener('click', limitUserExperience);
     // Performs log out.
     document.getElementById("signOutButton").addEventListener('click', restart);
     document.getElementById("submitSignIn").addEventListener('click', validate);
