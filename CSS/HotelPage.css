@@ -90,6 +90,7 @@ ul > li:before {
     position: relative;
     left: 1px; 
     text-align: center;
+    color: white;
   }
   .tab [type=radio] {
     display: none;   
