@@ -52,7 +52,7 @@ body{
     background-color: rgb(46, 144, 248);
     color: white;
 }
-/* Experiences section styling */
+/* Experiences section used also for past trips styling */
 .experiences-group{
     margin-top: 4%;
     background-color: white;
@@ -102,7 +102,6 @@ body{
     position: relative;
     left:auto;
     right:auto;
-    width: 45%;
 }
 /* Spotlight Section Styling */
 .spotlight-section{
@@ -130,4 +129,20 @@ body{
     background-color: #76B8FF;
     border-color: #76B8FF;
     width: 100px;
+}
+#name-greeting{
+    color: white;
+    font-size: 2em;
+    font-weight: bold;
+    padding-left: 15px;
+}
+/* Past trips Styling */
+.past-trips-group{
+    display: none;
+    margin-top: 4%;
+    background-color: white;
+    border-radius: 12px;
+}
+.img{
+    padding: 0 !important;
 }

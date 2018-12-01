@@ -12,7 +12,7 @@ br {
    margin: .01px 0;
 }
 .checked{
-    color: yellow;
+    color: rgb(255, 230, 0);
 }
 #bookButton{
     padding-left: 20px;
@@ -84,11 +84,10 @@ ul > li:before {
     float: left;
   }
   .tab label {
-    border-radius: 20%;
+    border-radius: 10%;
     background: darkgrey; 
     padding: 5px;
     width: 150px; 
-    border: 1px solid #ccc; 
     margin-left: -1px; 
     position: relative;
     left: 1px; 
@@ -106,7 +105,6 @@ ul > li:before {
     right: 0;
     bottom: 0;
     padding: 20px;
-    border: 1px solid #ccc; 
   }
   [type=radio]:checked ~ label {
     background: white;
@@ -115,4 +113,11 @@ ul > li:before {
   }
   [type=radio]:checked ~ label ~ .content {
     z-index: 1;
+  }
+  .btn-success{
+    margin-left: 100px; 
+  }
+  #writeReview{
+      margin-left: 200px;
+      margin-top: 30px;
   }
