@@ -1,4 +1,4 @@
-function goToHotelReview(){
+function goToHotelReview() {
     window.location.replace("../HTML/HotelReview.html");
 }
 
@@ -13,12 +13,8 @@ function deleteCookie(name) {
     document.cookie = name + '=;expires=Thu, 09 Sep 1997 00:00:01 GMT; path=/';
 };
 
-function limitUserAdvancedSearch() {
-    if (!checkCookie()) {
-        alert("Please sign in or register to access this page!");
-    } else {
-        window.location.replace("../HTML/AdvancedSearch.html");
-    }
+function goToAdvancedSearch() {
+    window.location.replace("../HTML/AdvancedSearch.html");
 }
 
 //gets the value associated with a cookie name
@@ -33,6 +29,7 @@ function getCookie(cname) {
     return "";
 }
 
+//Checks if cookie is present. 
 function checkCookie() {
     var user = getCookie("user");
     console.log(user);
@@ -45,6 +42,6 @@ function checkCookie() {
 
 $(document).ready(function () {
     console.log('page loaded');
-    document.getElementById("advancedSearch").addEventListener('click', limitUserAdvancedSearch);
+    document.getElementById("advancedSearch").addEventListener('click', goToAdvancedSearch);
     document.getElementById("signOut").addEventListener('click', restart);
 });
