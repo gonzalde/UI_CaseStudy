@@ -35,6 +35,16 @@ function getCookie(cname) {
     }
     return "";
 }
+function goBack(){
+    window.history.back();
+}
+
+document.getElementById("backArrow").addEventListener("mouseover", function(){
+    document.getElementById("backArrow").innerHTML = "&#9664;";
+})
+document.getElementById("backArrow").addEventListener("mouseout", function(){
+    document.getElementById("backArrow").innerHTML = "&#9665;";
+})
 
 //Checks if cookie is present. 
 function checkCookie() {

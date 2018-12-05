@@ -1,8 +1,12 @@
 #picAndDescript{
-    margin-top: 50px;
+    margin-top: 20px;
     height: 100px;
 }
-
+#backArrow{
+    color: white; 
+    margin-left: 20px;
+    font-size: 30px;
+}
 .btn{
     color: white
 }
