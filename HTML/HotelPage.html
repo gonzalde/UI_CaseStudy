@@ -1,203 +1,191 @@
 <!DOCTYPE html>
 <html lang="en">
 
-    <head>
-        <title>LeHotelier-Hotel</title>
-        <link rel="shortcut icon" href="../Assets/favicon.ico">
-        <meta name="viewport" content="width=device-width, initial-scale=1,
+<head>
+    <title>LeHotelier-Hotel</title>
+    <link rel="shortcut icon" href="../Assets/favicon.ico">
+    <meta name="viewport" content="width=device-width, initial-scale=1,
             shrink-to-fit=no">
-        <meta charset="utf-8" />
-        <link rel="stylesheet" href="../CSS/GlobalStyle.css">
-        <link rel="stylesheet" href="../CSS/HotelPage.css">
-        <link rel="stylesheet"
-            href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css">
-        <link rel="stylesheet"
-            href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
-        <script
-            src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
-        <script
-            src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/js/bootstrap.min.js"></script>
-    </head>
+    <meta charset="utf-8" />
+    <link rel="stylesheet" href="../CSS/GlobalStyle.css">
+    <link rel="stylesheet" href="../CSS/HotelPage.css">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/js/bootstrap.min.js"></script>
+</head>
 
-    <body style="background-color:#76B8FF">
-        <!-- Top Navbar -->
-        <div class="body-container">
-            <nav class="navbar navbar-expand-lg navbar-dark">
-                <a class="navbar-brand" style="font-size: 30px"
-                    href="Landing.html">
-                    <img src="../Assets/hotel.svg" width="40" height="40"
-                        class="d-inline-block align-bottom" alt="Logo">
-                    Le<b>Hotelier</b>
-                </a> <button class="navbar-toggler" type="button"
-                    data-toggle="collapse" data-target="#navbarNavAltMarkup"
-                    aria-controls="navbarNavAltMarkup" aria-expanded="false"
-                    aria-label="Toggle navigation">
-                    <span class="navbar-toggler-icon"></span>
-                </button>
-                <div class="collapse navbar-collapse justify-content-end"
-                    id="navbarNavAltMarkup">
-                    <div class="navbar-nav">
-                        <a class="nav-item nav-link" href="#"
-                            id="advancedSearch">Advanced Search</a>
-                        <a class="nav-item nav-link" href="#">Profile</a>
-                        <!-- upon click Sign In will open a sign in modal -->
-                        <a class="nav-item nav-link" id="signOut" href="#">Sign
-                            Out</a>
-                    </div>
+<body style="background-color:#76B8FF">
+    <!-- Top Navbar -->
+    <div class="body-container">
+        <nav class="navbar navbar-expand-lg navbar-dark">
+            <a class="navbar-brand" style="font-size: 30px" href="Landing.html">
+                <img src="../Assets/hotel.svg" width="40" height="40" class="d-inline-block align-bottom" alt="Logo">
+                Le<b>Hotelier</b>
+            </a> <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNavAltMarkup"
+                aria-controls="navbarNavAltMarkup" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse justify-content-end" id="navbarNavAltMarkup">
+                <div class="navbar-nav">
+                    <a class="nav-item nav-link" href="#" id="advancedSearch">Advanced Search</a>
+                    <a class="nav-item nav-link" href="#">Profile</a>
+                    <!-- upon click Sign In will open a sign in modal -->
+                    <a class="nav-item nav-link" id="signOut" href="#">Sign
+                        Out</a>
                 </div>
-            </nav>
+            </div>
+        </nav>
 
-            <!-- content section -->
-            <div class="container">
-                <div class="row justify-content-between" id="picAndDescript">
-                    <div class="col-5">
-                        <img id="hotelRoom" src="../Assets/hotelRoom.png"
-                            alt="">
-                    </div>
-                    <div class="col-5">
-                        <h3 style="color: #646464">Bank Hotel</h3>
-                        <p style="color: white;margin-bottom: 1px;">
-                            &Ouml;stermalm Stockholm
-                        </p>
-                        <span class="fa fa-star checked"></span>
-                        <span class="fa fa-star checked"></span>
-                        <span class="fa fa-star checked"></span>
-                        <span class="fa fa-star checked"></span>
-                        <span class="fa fa-star checked"></span>
-                    </div>
-                    <div class="col-2" id="Price">
-                        <h6 style="color: #646464;">Per Night</h6>
-                        <p style="color: white; margin-bottom: 4px;">253&euro;</p>
-                        <button class="btn btn-light" id="bookButton">Book</button>
-                    </div>
+        <!-- content section -->
+        <div class="container">
+            <div class="row justify-content-between" id="picAndDescript">
+                <div class="col-5">
+                    <img id="hotelRoom" src="../Assets/hotelRoom.png" alt="">
                 </div>
-                <div class="row justify-content-between">
-                    <div id="description">
-                        <p style="color:white">This elegant hotel is set in an
-                            ideal central Stockholm location, steps from
-                            Östermalm district's notable Strandvägen and
-                            Stureplan. The Bank Hotel features an on-site
-                            Mediterranean restaurant and fitness centre, along
-                            with free WiFi. Kungsträdgården Metro
-                            Station is right around the corner, 100 m away.
-                            Housed in a former bank building, all rooms are
-                            designed with stylish furnishings and feature a
-                            flat-screen TV, minibar and coffee facilities.
-                            Bathrobes, slippers and plush arm chairs provide
-                            further relaxation. Other details include
-                            luxury toiletries in the marble bathrooms.</p>
-                    </div>
+                <div class="col-5">
+                    <h3 style="color: #646464">Bank Hotel</h3>
+                    <p style="color: white;margin-bottom: 1px;">
+                        &Ouml;stermalm Stockholm
+                    </p>
+                    <span class="fa fa-star checked"></span>
+                    <span class="fa fa-star checked"></span>
+                    <span class="fa fa-star checked"></span>
+                    <span class="fa fa-star checked"></span>
+                    <span class="fa fa-star checked"></span>
                 </div>
-                <div class="row">
-                    <div class="col-2" id="QuickFacts">
-                        <strong style="color: #646464;">Quick Facts</strong>
-                        <ul>
-                            <li>Free Wifi</li>
-                            <li>Parking Available</li>
-                            <li>Fitness Center</li>
-                            <li>Room Service</li>
-                            <li>Bar</li>
-                        </ul>
-                    </div>
-                    <div class="col-2" id="mapDiv">
-                        <strong>Location</strong>
-                        <img id="map" src="../Assets/map.png" alt="">
-                    </div>
-                    <div class="col-2" id="share">
-                        <p>Share</p>
-                        <p>Remove from Favorites</p>
-                    </div>
-                    <div class="col-6 tabs" id="reviews">
+                <div class="col-2" id="Price">
+                    <h6 style="color: #646464;">Per Night</h6>
+                    <p style="color: white; margin-bottom: 4px;">253&euro;</p>
+                    <button class="btn btn-light" id="bookButton">Book</button>
+                </div>
+            </div>
+            <div class="row justify-content-between">
+                <div id="description">
+                    <p style="color:white">This elegant hotel is set in an
+                        ideal central Stockholm location, steps from
+                        Östermalm district's notable Strandvägen and
+                        Stureplan. The Bank Hotel features an on-site
+                        Mediterranean restaurant and fitness centre, along
+                        with free WiFi. Kungsträdgården Metro
+                        Station is right around the corner, 100 m away.
+                        Housed in a former bank building, all rooms are
+                        designed with stylish furnishings and feature a
+                        flat-screen TV, minibar and coffee facilities.
+                        Bathrobes, slippers and plush arm chairs provide
+                        further relaxation. Other details include
+                        luxury toiletries in the marble bathrooms.</p>
+                </div>
+            </div>
+            <div class="row">
+                <div class="col-2" id="QuickFacts">
+                    <strong style="color: #646464;">Quick Facts</strong>
+                    <ul>
+                        <li>Free Wifi</li>
+                        <li>Parking Available</li>
+                        <li>Fitness Center</li>
+                        <li>Room Service</li>
+                        <li>Bar</li>
+                    </ul>
+                </div>
+                <div class="col-2" id="mapDiv">
+                    <strong>Location</strong>
+                    <img id="map" src="../Assets/map.png" alt="">
+                </div>
+                <div class="col-2" id="share">
+                    <p>Share</p>
+                    <button id="addFavorites" class="btn btn-secondary">Add to <br> Group Favorites</button>
+                </div>
+                <div class="col-6 tabs" id="reviews">
 
-                        <div class="tab">
-                            <input type="radio" id="tab-1" name="tab-group-1"
-                                checked>
-                            <label for="tab-1">Reviews</label>
+                    <div class="tab">
+                        <input type="radio" id="tab-1" name="tab-group-1" checked>
+                        <label for="tab-1">Reviews</label>
 
-                            <div class="content">
-                                <div>
-                                    <Strong>Joan W.</Strong>
-                                    <p style="display: inline; margin-left:
-                                        80px;">The Hotel was Amazing.</p>
-                                    <span class="fa fa-star checked"
-                                        style="margin-left: 109px;"></span>
-                                    <span class="fa fa-star checked"></span>
-                                    <span class="fa fa-star checked"></span>
-                                    <span class="fa fa-star checked"></span>
-                                    <span class="fa fa-star checked"></span>
-                                </div>
-
-                                <div>
-                                    <Strong>Elliot K.</Strong>
-                                    <p style="display: inline; margin-left:
-                                        80px;">Amazing experience in Stockholm.</p>
-                                    <span class="fa fa-star checked"
-                                        style="margin-left: 37px;"></span>
-                                    <span class="fa fa-star checked"></span>
-                                    <span class="fa fa-star checked"></span>
-                                    <span class="fa fa-star checked"></span>
-                                    <span class="fa fa-star checked"></span>
-                                </div>
-                                <div>
-                                    <Strong>John R.</Strong>
-                                    <p style="display: inline; margin-left:
-                                        80px;">This Hotel Sucked</p>
-                                    <span class="fa fa-star checked"
-                                        style="margin-left: 155px;"></span>
-                                    <span class="fa fa-star"></span>
-                                    <span class="fa fa-star"></span>
-                                    <span class="fa fa-star"></span>
-                                    <span class="fa fa-star"></span>
-                                </div>
-                                <button onclick="goToHotelReview()"
-                                    id="writeReview" class="btn btn-secondary">Write
-                                    a
-                                    Review +</button>
+                        <div class="content">
+                            <div>
+                                <Strong>Joan W.</Strong>
+                                <p style="display: inline; margin-left:
+                                        80px;">The
+                                    Hotel was Amazing.</p>
+                                <span class="fa fa-star checked" style="margin-left: 109px;"></span>
+                                <span class="fa fa-star checked"></span>
+                                <span class="fa fa-star checked"></span>
+                                <span class="fa fa-star checked"></span>
+                                <span class="fa fa-star checked"></span>
                             </div>
 
-                            <div class="tab">
-                                <input type="radio" id="tab-2"
-                                    name="tab-group-1">
-                                <label for="tab-2">Room Availability</label>
-                                <div class="content">
-                                    <div>
-                                        <Strong>Delux Suite</Strong>
-                                        <p style="display: inline; margin-left:
-                                            80px;">Capacity: 6 People</p>
-                                        <button class="btn btn-success btn-sm">200&euro;/night</button>
-                                    </div>
+                            <div>
+                                <Strong>Elliot K.</Strong>
+                                <p style="display: inline; margin-left:
+                                        80px;">Amazing
+                                    experience in Stockholm.</p>
+                                <span class="fa fa-star checked" style="margin-left: 37px;"></span>
+                                <span class="fa fa-star checked"></span>
+                                <span class="fa fa-star checked"></span>
+                                <span class="fa fa-star checked"></span>
+                                <span class="fa fa-star checked"></span>
+                            </div>
+                            <div>
+                                <Strong>John R.</Strong>
+                                <p style="display: inline; margin-left:
+                                        80px;">This
+                                    Hotel Sucked</p>
+                                <span class="fa fa-star checked" style="margin-left: 155px;"></span>
+                                <span class="fa fa-star"></span>
+                                <span class="fa fa-star"></span>
+                                <span class="fa fa-star"></span>
+                                <span class="fa fa-star"></span>
+                            </div>
+                            <button onclick="goToHotelReview()" id="writeReview" class="btn btn-secondary">Write
+                                a
+                                Review +</button>
+                        </div>
+
+                        <div class="tab">
+                            <input type="radio" id="tab-2" name="tab-group-1">
+                            <label for="tab-2">Room Availability</label>
+                            <div class="content">
+                                <div>
+                                    <Strong>Delux Suite</Strong>
+                                    <p style="display: inline; margin-left:
+                                            80px;">Capacity:
+                                        6 People</p>
+                                    <button class="btn btn-success btn-sm">200&euro;/night</button>
                                 </div>
                             </div>
                         </div>
                     </div>
                 </div>
             </div>
-
-            <!-- Footer Section -->
-            <footer class="footer">
-                <div class="container">
-                    <div class="row footer-nav">
-                        <div class="col-sm"><a style="color:#8E8E93">&copy; Le
-                                Hotelier Inc. 2018</a></div>
-                        <div class="col-sm" id="footerMid">
-                            <a href="#">About</a>
-                            <a href="#">Careers</a>
-                            <a href="#">Help</a>
-                            <a href="#">Privacy</a>
-                        </div>
-                        <div class="col-sm">
-                            <a href="http://www.instagram.com"><i class="fa
-                                    fa-instagram"></i></a>
-                            <a href="http://www.twitter.com"><i class="fa
-                                    fa-twitter"></i></a>
-                            <a href="http://www.facebook.com"><i class="fa
-                                    fa-facebook"></i></a>
-                        </div>
-                    </div>
-
-                </div>
-            </footer>
         </div>
-        <script src="../JS/HotelPage.js"></script>
-    </body>
+
+        <!-- Footer Section -->
+        <footer class="footer">
+            <div class="container">
+                <div class="row footer-nav">
+                    <div class="col-sm"><a style="color:#8E8E93">&copy; Le
+                            Hotelier Inc. 2018</a></div>
+                    <div class="col-sm" id="footerMid">
+                        <a href="#">About</a>
+                        <a href="#">Careers</a>
+                        <a href="#">Help</a>
+                        <a href="#">Privacy</a>
+                    </div>
+                    <div class="col-sm">
+                        <a href="http://www.instagram.com"><i class="fa
+                                    fa-instagram"></i></a>
+                        <a href="http://www.twitter.com"><i class="fa
+                                    fa-twitter"></i></a>
+                        <a href="http://www.facebook.com"><i class="fa
+                                    fa-facebook"></i></a>
+                    </div>
+                </div>
+
+            </div>
+        </footer>
+    </div>
+    <script src="../JS/HotelPage.js"></script>
+</body>
+
 </html>

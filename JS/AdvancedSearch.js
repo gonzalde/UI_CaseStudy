@@ -64,5 +64,8 @@ $(document).ready(function () {
     document.getElementById("signOut").addEventListener('click', restart);
     $("#favorites-title").css("color", "#646464");
     $("#favorites-title").css("text-decoration", "underline");
+    if(checkCookie()){
+        document.getElementById("groupFavBank").classList.remove("hidden");
+    }
 });
 
