@@ -19,7 +19,7 @@
             src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/js/bootstrap.min.js"></script>
     </head>
 
-    <body style="background-color:#76B8FF">
+    <body style="background-color:#BE92A2">
         <!-- Top Navbar -->
         <nav class="navbar navbar-expand-lg navbar-dark">
             <a class="navbar-brand" style="font-size: 30px" href="Landing.html">
@@ -44,53 +44,82 @@
             </div>
         </nav>
 
+        <!-- Main Content -->
         <div class="container">
-            <div class="row justify-content-between">
-                <div class="col-6">
-                    <div class="description">
-                        <h2> Bank hotel </h2>
-                        <h3> Östermalm, Stockholm </h3>
-                        <div class="rating">
-                            <span class="fa fa-star checked"></span>
-                            <span class="fa fa-star checked"></span>
-                            <span class="fa fa-star checked"></span>
-                            <span class="fa fa-star checked"></span>
-                            <span class="fa fa-star checked"></span>
+            <div class="row">
+                <span id="backArrow" onclick="goToHotel()">&#9665;</span>
+            </div>
+            <div class="main-content">
+                <div class="row">
+                    <div class="col-6">
+                        <div class="description">
+                            <h1> Bank Hotel </h1>
+                            <h2> Östermalm, Stockholm </h2>
+                            <div class="rating">
+                                <span class="fa fa-star checked"></span>
+                                <span class="fa fa-star checked"></span>
+                                <span class="fa fa-star checked"></span>
+                                <span class="fa fa-star checked"></span>
+                                <span class="fa fa-star checked"></span>
+                            </div>
+                            <div id="tags">
+                                <button type="button" class="btn">Upscale</button>
+                                <button type="button" class="btn">Couples</button>
+                                <button type="button" class="btn">Family-friendly</button>
+                            </div>
                         </div>
-                        <div id="tags">
-                            <button type="button" class="btn">Upscale</button>
-                            <button type="button" class="btn btn-secondary">Couples</button>
-                            <button type="button" class="btn">Family-friendly</button>
-                        </div>
+                        <img src="../Assets/hotelRoom.png" alt="bankHotel"
+                            class="imgHotel">
                     </div>
-
-                    <img src="../Assets/ariaHotel.png" alt="Los Angeles"
-                        class="imgHotel">
-
-                </div>
-                <div class="col-6">
-                    <h2> Leave a review </h2>
-                    <form id="hotelReview">
-                        <div class="form-group">
-                            <p style="display: inline"> Type of trip : </p>
-                            <input id="tripType" type="text" placeholder="Trip Type">
-                            <br>
-                            <p id="rateTrip"> Rate : </p>
-                            <span class="fa fa-star checked"></span>
-                            <span class="fa fa-star checked"></span>
-                            <span class="fa fa-star checked"></span>
-                            <span class="fa fa-star checked"></span>
-                            <span class="fa fa-star checked"></span>
-                            <br>
-                            <p style="display: inline"> Language(s) : </p>
-                            <input type="text" placeholder="Languages">
-                            <br>
-                            <p>Comments:</p>
-                            <textarea class="form-control" rows="5" id="review"></textarea>
-                            <br>
-                            <button type="submit" class="btn btn-light">Submit</button>
-                        </div>
-                    </form>
+                    <div class="col-6 reviewInput">
+                        <h3> Leave a review </h3>
+                        <form id="hotelReview">
+                            <div class="form-group">
+                                <div class="row review-criteria">
+                                    <h4> Trip Type: </h4>
+                                    <select class="form-control form-control-sm
+                                        type-form"
+                                        id="tripType">
+                                        <option>Hotel</option>
+                                        <option>Experience</option>
+                                    </select>
+                                </div>
+                                <div class="row review-criteria">
+                                    <h4> Star Rating: </h4>
+                                    <select multiple class="form-control
+                                        form-control-sm"
+                                        id="star-rating">
+                                        <option>★</option>
+                                        <option>★★</option>
+                                        <option>★★★</option>
+                                        <option>★★★★</option>
+                                        <option>★★★★★</option>
+                                    </select>
+                                </div>
+                                <div class="row review-criteria">
+                                    <h4> Languages: </h4>
+                                    <select multiple class="form-control
+                                        form-control-sm"
+                                        id="languages">
+                                        <option>English</option>
+                                        <option>Spanish</option>
+                                        <option>German</option>
+                                        <option>Chinese</option>
+                                        <option>Arabic</option>
+                                        <option>Hindi</option>
+                                        <option>Portuguese</option>
+                                        <option>French</option>
+                                    </select>
+                                </div>
+                                <div class="row review-criteria">
+                                    <h4> Comments: </h4>
+                                    <textarea class="form-control" rows="5"
+                                        id="review"></textarea>
+                                </div>
+                                <button type="submit" class="btn btn-primary">Submit</button>
+                            </div>
+                        </form>
+                    </div>
                 </div>
             </div>
         </div>
@@ -120,7 +149,6 @@
                                 fa-facebook"></i></a>
                     </div>
                 </div>
-
             </div>
         </footer>
         <script src="../JS/HotelReview.js"></script>

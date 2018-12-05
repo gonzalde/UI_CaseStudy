@@ -67,15 +67,12 @@ function logIn() {
 
 function updateLoggedInUI() {
     $('html, body').css('background-image', 'none');
-    $('html, body').css('background-color', '#76B8FF');
+    $('html, body').css('background-color', '#BE92A2');
     $('#quick-search-title').text("Where would you like to go?");
     var cookieKey = getCookie("user");
     var userJSON = JSON.parse(getCookie(cookieKey));
     var loggedInName = userJSON["name"];
     $('#name-greeting').text("Hi " + loggedInName + ",");
-    $('#search-button').css('background-color', 'white');
-    $('#search-button').css('border-color', 'white');
-    $('#search-button').css('color', '#76B8FF');
     addPastTrips();
 }
 

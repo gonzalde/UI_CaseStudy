@@ -39,13 +39,6 @@ function goBack(){
     window.history.back();
 }
 
-document.getElementById("backArrow").addEventListener("mouseover", function(){
-    document.getElementById("backArrow").innerHTML = "&#9664;";
-})
-document.getElementById("backArrow").addEventListener("mouseout", function(){
-    document.getElementById("backArrow").innerHTML = "&#9665;";
-})
-
 //Checks if cookie is present. 
 function checkCookie() {
     var user = getCookie("user");
@@ -67,23 +60,29 @@ function checkFavCookie() {
     }
 }
 
-document.getElementById("addFavorites").addEventListener("click", function(){
-    if(document.getElementById("addFavorites").classList.contains("remove")){
-        document.getElementById("addFavorites").classList.remove("remove");
-        document.getElementById("addFavorites").innerHTML = "Add to <br> Group Favorites";
-        deleteCookie("favAdded");
-        console.log("something happened")
-    }else{
-        document.getElementById("addFavorites").classList.add("remove");
-        document.getElementById("addFavorites").innerHTML = "Remove from <br> Group Favorites";
-        setCookie("favAdded", "true");
-    }
-})
-
 $(document).ready(function () {
     console.log('page loaded');
     document.getElementById("advancedSearch").addEventListener('click', goToAdvancedSearch);
     document.getElementById("signOut").addEventListener('click', restart);
+    document.getElementById("backArrow").addEventListener("mouseover", function(){
+        document.getElementById("backArrow").innerHTML = "&#9664;";
+    })
+    document.getElementById("backArrow").addEventListener("mouseout", function(){
+        document.getElementById("backArrow").innerHTML = "&#9665;";
+    })
+    document.getElementById("addFavorites").addEventListener("click", function(){
+        if(document.getElementById("addFavorites").classList.contains("remove")){
+            document.getElementById("addFavorites").classList.remove("remove");
+            document.getElementById("addFavorites").innerHTML = "Add to <br> Group Favorites";
+            deleteCookie("favAdded");
+            console.log("something happened")
+        }else{
+            document.getElementById("addFavorites").classList.add("remove");
+            document.getElementById("addFavorites").innerHTML = "Remove from <br> Group Favorites";
+            setCookie("favAdded", "true");
+        }
+    })
+    
     if(checkFavCookie){
         document.getElementById("addFavorites").innerHTML = "Remove from <br> Group Favorites"
         document.getElementById("addFavorites").classList.add("remove");

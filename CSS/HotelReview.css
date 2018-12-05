@@ -1,21 +1,72 @@
-.checked {
-    color: #f6e58d;
+/* Main Content Styling */
+.main-content{
+  margin-top: 2.7%;
 }
-
+.main-content h1{
+  color: white;
+  font-size: 1.8em;
+  font-weight: bold;
+}
+.main-content h2{
+  color: white;
+  font-weight: bold;
+  font-size: 0.9em;
+}
+.main-content h3{
+  color: white;
+  font-weight: bold;
+  font-size: 1.4em;
+}
+.main-content div{
+  margin-left: 0px;
+  margin-right: 0px;
+}
+.main-content h4{
+  color: white;
+  font-size: 1.1em;
+}
+#backArrow{
+  color: white; 
+  margin-left: 40px;
+  font-size: 30px;
+}
+#tripType{
+  margin-left: 20px;
+  width: 30%;
+}
+#star-rating{
+  margin-left: 20px;
+  width: 40%;
+  color:#FEDF00;
+}
+#languages{
+  margin-left: 20px;
+  width: 40%;
+}
+.review-criteria{
+  margin-bottom: 10px;
+}
+.search-criteria button{
+  margin-right: 25%;
+  float: right;
+  background-color:#76B8FF;
+  border-color: #76B8FF;
+  color: white;
+}
+.checked{
+  color:#FEDF00;
+}
 .imgHotel {
-  width:60%;
+  width: 80%;
   height:auto;
   border-radius: 10%;
   margin-top: 20px;
 }
-p{
-  color: #646464;
-}
 #tags{
   margin-top: 20px;
 }
-.checked{
-  color: rgb(255, 230, 0);
+#tags button{
+  color: #646464;
 }
 input{
   border-radius: 5%;
@@ -24,16 +75,9 @@ input{
 .fa{
   display: inline;
 }
-#rateTrip{
-  display: inline;
+.reviewInput button{
+  float: right;
+  background-color:#76B8FF;
+  border-color: #76B8FF;
+  color: white;
 }
-br{
-  margin-bottom: 10px;
-}
-h2{
-  color: #646464 !important;
-}
-h3{
-  color: #646464 !important;
-}
-
