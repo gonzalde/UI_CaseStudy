@@ -60,6 +60,28 @@ function searchListings(){
     "?checkin="+checkinDate+"?checkout="+checkoutDate+"?rooms="+roomNumber+"?guests="+guestsNumber);
 }
 
+function checkCookie() {
+    var user = getCookie("favAdded");
+    console.log(user);
+    if (user == "") {
+        return false;
+    } else {
+        return true;
+    }
+}
+
+//gets the value associated with a cookie name
+function getCookie(cname) {
+    var name = cname + "=";
+    var ca = document.cookie.split(';');
+    for (var i = 0; i < ca.length; i++) {
+        var c = ca[i];
+        while (c.charAt(0) == ' ') c = c.substring(1);
+        if (c.indexOf(name) == 0) return c.substring(name.length, c.length);
+    }
+    return "";
+}
+
 $(document).ready(function () {
     document.getElementById("signOut").addEventListener('click', restart);
     $("#favorites-title").css("color", "#646464");
