@@ -37,7 +37,8 @@
                 <div class="collapse navbar-collapse justify-content-end"
                     id="navbarNavAltMarkup">
                     <div class="navbar-nav">
-                        <a class="nav-item nav-link" href="#">Advanced Search</a>
+                        <a class="nav-item nav-link" href="#"
+                            id="advancedSearch">Advanced Search</a>
                         <a class="nav-item nav-link" href="#">Profile</a>
                         <!-- upon click Sign In will open a sign in modal -->
                         <a class="nav-item nav-link" id="signOut" href="#">Sign
@@ -48,13 +49,48 @@
 
             <!-- Main Content -->
             <div class="container main-content">
-                <h6>Search Listings</h6>
+                <h6 id="trip-title">Search Listings</h6>
                 <div class="row">
                     <!-- Listing Results Section -->
-                    <div class="col-6">
-                        <h1>Results for</h1>
+                    <div class="col-lg">
+                        <div class="row search-criteria">
+                            <div class="col-3 border-nes">
+                                <h1>Destination</h1>
+                                <h2 id="location-title">null</h2>
+                            </div>
+                            <div class="col-3 border-nes">
+                                <h1>Stay Dates</h1>
+                                <h2 id="stay-dates">null</h2>
+                            </div>
+                            <div class="col-3 border-nes">
+                                <h1>Rooms & Guests</h1>
+                                <h2 id="rooms-guests">null</h2>
+                            </div>
+                            <div class="col-3">
+                                <button class="btn btn-primary edit-search"
+                                    onclick="goToAdvancedSearch()">Edit Search</button>
+                            </div>
+                        </div>
+                        <div>
+                        </div>
                         <div class="listing-results">
-
+                            <h3>Showing 1 - 1 of 1 hotels</h3>
+                            <div class="favorites-listing row col-md">
+                                <img class="favorites-img"
+                                    src="../Assets/bankHotel.png" width="80"
+                                    height="80" alt="bankHotel">
+                                <div class="listing col-lg">
+                                    <h5>Bank Hotel</h5>
+                                    <p>Östermalm, Sweden</p>
+                                    <p style="color: #FEDF00;">★★★★★ </p>
+                                    <h5 style="color:#1c1c1c;font-size:.8em">3 Reviews</h5>
+                                </div>
+                                <div class="listing-pricing col-3">
+                                    <h6>From 253 &euro; / night</h6>
+                                    <button class="btn btn-primary float-right"
+                                        onclick="goToHotel()">Book</button>
+                                </div>
+                            </div>
                         </div>
                     </div>
                 </div>

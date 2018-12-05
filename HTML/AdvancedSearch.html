@@ -66,18 +66,18 @@
                             </select>
                             <h2>Location</h2>
                             <input type="text" class="form-control
-                                form-control-sm" style="width:75%"
+                                form-control-sm" style="width:75%" id="location"
                                 placeholder="Give 'Geneva' a chance">
                             <div class="row">
                                 <div class="search-criteria date">
                                     <h2>Check in</h2>
                                     <input type="date" class="form-control
-                                        form-control-sm">
+                                        form-control-sm" id="checkin">
                                 </div>
                                 <div class="search-criteria date">
                                     <h2>Check out</h2>
                                     <input type="date" class="form-control
-                                        form-control-sm">
+                                        form-control-sm" id="checkout">
                                 </div>
                             </div>
                             <div class="row">
@@ -156,7 +156,7 @@
                                 <div class="search-criteria col-1">
                                     <button style="margin-right: 100px;
                                         margin-top: 70px;" type="button"
-                                        class="btn btn-primary">Go!</button>
+                                        class="btn btn-primary" onclick="searchListings()">Go!</button>
                                 </div>
                             </div>
                         </div>

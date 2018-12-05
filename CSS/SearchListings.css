@@ -1,0 +1,88 @@
+/* Main Content Styling */
+.main-content{
+    margin-top: 2.7%;
+}
+.main-content h1{
+    color: #1c1c1c;
+    font-size: 0.8em;
+}
+.main-content h2{
+    color: #646464;
+    font-size: 1em;
+}
+.main-content h3{
+    padding-top: 4%;
+    color: white;
+    font-size: 0.8em;
+}
+.main-content h6{
+    color:white;
+    font-size: 2em;
+    font-weight: bold;
+    padding-left: 15px;
+}
+.main-content div{
+    margin-left: 0px;
+    margin-right: 0px;
+}
+/* Search Criteria Bar Styling */
+.search-criteria {
+    background-color:  rgba(255, 255, 255, 0.8);
+    color: #646464;
+      border-radius: 12px;
+
+}
+.search-criteria div{
+    margin-top: 1%;
+    margin-bottom: 1%;
+}
+.border-nes{
+    border-right: #4c6663 solid 1px;
+}
+.search-criteria button{
+    margin-top: 2%;
+    width: 75%;
+    background-color: #666a86 !important;
+    border-color: #666a86;
+    background: white;
+}
+
+.favorites-listing{
+    padding: 2% 2% 2% 2%;
+    background-color: white;
+    border-radius: 5px;
+}
+.favorites-listing h5{
+    font-size: 1.4em;
+    color: #4c6663;
+    margin:0;
+}
+.favorites-listing p{
+    font-size: .8em;
+    color: #646464;
+    margin:0;
+}
+.favorites-listing h6{
+    font-size: 1em;
+    font-weight: bold;
+    color: #646464;
+    margin:0;
+    text-align: right;
+}
+
+.listing-pricing{
+    position: relative;
+    left:auto;
+    right:auto;
+}
+.listing-pricing button{
+    margin-top: 5%;
+    width:50%;
+    position: relative;
+    background-color: #80cfa9;
+    border-color: #80cfa9;
+    color: white;
+    font-size: 1em;
+    display: inline-block;
+    padding: 5px 8px 5px 8px;
+}
