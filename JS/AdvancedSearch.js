@@ -32,6 +32,34 @@ function getGroupFavorites() {
     $("#favorites-title").css("text-decoration", "none");
 }
 
+function searchListings(){
+    var tripType = $("#tripType option:selected").text();
+    var location = $("#location").val();
+    if(location==""){
+        alert("Please add a location!");
+        return;
+    }
+    var checkin = new Date($("#checkin").val());
+    console.log(checkin);
+    if(checkin=="Invalid Date"){
+        alert("Please add a check in date!");
+        return;
+    }
+    var checkinDate = checkin.toLocaleDateString();
+    var checkout = new Date($("#checkout").val());
+    if(checkout=="Invalid Date"){
+        alert("Please add a check out date!");
+        return;
+    }
+    var checkoutDate = checkout.toLocaleDateString();
+    var roomNumber = ($("#roomNumber").val()=="5+")?"5":$("#roomNumber").val();
+    var adultNumber = ($("#adultNumber").val()=="5+")?"5":$("#adultNumber").val();
+    var childNumber = ($("#childNumber").val()=="5+")?"5":$("#childNumber").val();
+    var guestsNumber = parseInt(adultNumber)+parseInt(childNumber);
+    window.location.replace("../HTML/SearchListings.html?type="+tripType+"?location="+location+
+    "?checkin="+checkinDate+"?checkout="+checkoutDate+"?rooms="+roomNumber+"?guests="+guestsNumber);
+}
+
 function checkCookie() {
     var user = getCookie("favAdded");
     console.log(user);

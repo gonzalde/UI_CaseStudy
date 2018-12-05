@@ -47,23 +47,6 @@
 .stars option{
     color: #FEDF00;
 }
-.keyword-option {
-    padding-left: 1%;
-    padding-right: 1%;
-    margin-left: 1% !important;
-    margin-right: 1% !important;
-    background-color: white;
-    color: #646464;
-    display: inline-block;
-    border-radius: 4px;
-    font-weight: normal;
-    font-size: 0.9em;
-    max-width: 100%;
-} 
-.keyword-option p{
-    margin: 0;
-    display: inline-block;
-} 
 
 /* Favorites Section Styling */
 .favorites-select h1{
@@ -154,8 +137,8 @@
 }
 .favorites-pricing button{
     position: relative;
-    background-color: #76B8FF;
-    border-color: #76B8FF;
+    background-color: #80cfa9;
+    border-color: #80cfa9;
     color: white;
     font-size: .8em;
     display: inline-block;
