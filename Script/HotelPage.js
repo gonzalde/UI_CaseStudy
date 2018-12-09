@@ -1,3 +1,4 @@
+// Switches page to hotel review page.
 function goToHotelReview() {
     window.location.replace("../HTML/HotelReview.html");
 }
@@ -8,6 +9,7 @@ function restart() {
     window.location.replace("../HTML/Landing.html");
 }
 
+// Sets a cookie with desired name, value, and date
 function setCookie(cname, cvalue, exdays) {
     var d = new Date();
     d.setTime(d.getTime() + (exdays * 24 * 60 * 60 * 1000));
@@ -15,11 +17,13 @@ function setCookie(cname, cvalue, exdays) {
     document.cookie = cname + "=" + cvalue + "; " + expires + "; path=/";
 }
 
+// Deletes a cookie associated with name.
 function deleteCookie(name) {
     console.log("Cookie deleted!");
     document.cookie = name + '=;expires=Thu, 09 Sep 1997 00:00:01 GMT; path=/';
 };
 
+// Switches page to advanced search.
 function goToAdvancedSearch() {
     window.location.replace("../HTML/AdvancedSearch.html");
 }

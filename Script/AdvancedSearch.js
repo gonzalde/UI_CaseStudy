@@ -1,19 +1,18 @@
-
-// Used for signing out and returning to the home-page
+// Signs out and returning to the home-page
 function restart() {
     deleteCookie("user");
     window.location.replace("../HTML/Landing.html");
 }
-
+// Deletes the cookie associated with the name passed.
 function deleteCookie(name) {
     console.log("Cookie deleted!");
     document.cookie = name + '=;expires=Thu, 09 Sep 1997 00:00:01 GMT; path=/';
 };
-
+// Switches page to the hotel.
 function goToHotel(){
     window.location.replace("../HTML/HotelPage.html");
 }
-
+// Sets content related to the favorites tab.
 function getFavorites() {
     $(".group-favorites-group").hide();
     $(".favorites-group").show();
@@ -22,7 +21,7 @@ function getFavorites() {
     $("#group-favorites-title").css("color", "white");
     $("#group-favorites-title").css("text-decoration", "none");
 }
-
+// Sets content related to the group favorites tab.
 function getGroupFavorites() {
     $(".favorites-group").hide();
     $(".group-favorites-group").show();
@@ -31,7 +30,7 @@ function getGroupFavorites() {
     $("#favorites-title").css("color", "white");
     $("#favorites-title").css("text-decoration", "none");
 }
-
+// Performs the search and passes search parameters to listings page.
 function searchListings(){
     var tripType = $("#tripType option:selected").text();
     var location = $("#location").val();
@@ -59,7 +58,7 @@ function searchListings(){
     window.location.replace("../HTML/SearchListings.html?type="+tripType+"?location="+location+
     "?checkin="+checkinDate+"?checkout="+checkoutDate+"?rooms="+roomNumber+"?guests="+guestsNumber);
 }
-
+// Checks if cookie is present
 function checkCookie() {
     var user = getCookie("favAdded");
     console.log(user);
@@ -70,7 +69,7 @@ function checkCookie() {
     }
 }
 
-//gets the value associated with a cookie name
+//Gets the value associated with a cookie name.
 function getCookie(cname) {
     var name = cname + "=";
     var ca = document.cookie.split(';');

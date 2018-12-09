@@ -3,12 +3,12 @@ function restart() {
   deleteCookie("user");
   window.location.replace("../HTML/Landing.html");
 }
-
+//Deletes a cookie associated with name.
 function deleteCookie(name) {
   console.log("Cookie deleted!");
   document.cookie = name + '=;expires=Thu, 09 Sep 1997 00:00:01 GMT; path=/';
 };
-
+//Limits the functionality to access advanced user page.
 function limitUserAdvancedSearch() {
   if (!checkCookie()) {
     alert("Please sign in or register to access this page!");
@@ -16,12 +16,11 @@ function limitUserAdvancedSearch() {
     window.location.replace("../HTML/AdvancedSearch.html");
   }
 }
-
+//Switches page to hotel.
 function goToHotel(){
   window.location.replace("../HTML/HotelPage.html");
 }
-
-//gets the value associated with a cookie name
+//Gets the value associated with a cookie name
 function getCookie(cname) {
   var name = cname + "=";
   var ca = document.cookie.split(';');
@@ -32,7 +31,7 @@ function getCookie(cname) {
   }
   return "";
 }
-
+//Checks if user is in session.
 function checkCookie() {
   var user = getCookie("user");
   console.log(user);

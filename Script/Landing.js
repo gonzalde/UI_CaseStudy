@@ -1,4 +1,4 @@
-//sets individual cookie such as the Username cookie or the Email cookie
+//Sets individual cookie such as the Username cookie or the Email cookie
 function setCookie(cname, cvalue, exdays) {
     var d = new Date();
     d.setTime(d.getTime() + (exdays * 24 * 60 * 60 * 1000));
@@ -6,7 +6,7 @@ function setCookie(cname, cvalue, exdays) {
     document.cookie = cname + "=" + cvalue + "; " + expires + "; path=/";
 }
 
-//gets the value associated with a cookie name
+//Gets the value associated with a cookie name
 function getCookie(cname) {
     var name = cname + "=";
     var ca = document.cookie.split(';');
@@ -17,7 +17,7 @@ function getCookie(cname) {
     }
     return "";
 }
-//checks to see if a cookie under a given name exists
+//Checks to see if a cookie under a given name exists
 function checkRepeatCookie() {
     var user = getCookie(document.getElementById('rEmail').value);
     if (user != "") {
@@ -27,7 +27,7 @@ function checkRepeatCookie() {
         return true;
     }
 }
-
+// Checks if user is in session.
 function checkCookie() {
     var user = getCookie("user");
     console.log(user);
@@ -37,7 +37,7 @@ function checkCookie() {
         return true;
     }
 }
-
+// Creates a cookie for logged in user
 function createCookies(evt) {
     evt.preventDefault();
     if (checkRepeatCookie()) {
@@ -56,7 +56,7 @@ function createCookies(evt) {
         restart();
     }
 }
-
+// Performs login.
 function logIn() {
     document.getElementById("signInButton").style.display = "none";
     document.getElementById("signOut").style.display = "block";
